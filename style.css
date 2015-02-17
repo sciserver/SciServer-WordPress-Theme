@@ -1,11 +1,13 @@
 /*
-Theme Name:         Roots Starter Theme
-Theme URI:          http://roots.io/starter-theme/
-Description:        Roots is a WordPress starter theme based on HTML5 Boilerplate & Bootstrap. <a href="https://github.com/roots/roots/contributors">Contribute on GitHub</a>
-Version:            7.0.3
-Author:             Roots
-Author URI:         http://roots.io/
-
+Theme Name:         IDIES Root Theme
+Theme URI:          http://idies.jhu.edu
+Description:        IDIES Root Theme, based on the Roots WordPress starter theme 
+					using HTML5 Boilerplate & Bootstrap. Also uses LESS and Grunt
+					to compile and minimize CSS and JavaScript.
+					Version:            7.0.3.1
+Author:             Bonnie Souter
+Author URI:         http://idies.jhu.edu
+GIT:				https://bitbucket.org/idies/roots_idies
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
