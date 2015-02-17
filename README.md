@@ -1,5 +1,5 @@
 # [IDIES Roots Theme](http://idies.jhu.edu/)
-Build on:
+Built on:
 ## [Roots Starter Theme](http://roots.io/)
 [![devDependency Status](https://david-dm.org/roots/roots/dev-status.svg)](https://david-dm.org/roots/roots#info=devDependencies)
 
