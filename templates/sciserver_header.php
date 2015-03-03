@@ -1,0 +1,37 @@
+<header class="banner navbar navbar-default navbar-static-top" role="banner">
+	<div class="logo">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<a href="/"><img src="<?php echo get_bloginfo('template_url') . '/assets/img/sciserverlogo.png'; ?>" class="header-logo img-responsive" alt="<?php get_bloginfo( 'name ' ); ?>"></a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="tagline"><?php echo get_bloginfo ( 'description' );?></div>
+				</div>
+			</div>
+		</div>
+	</div><!--end of logo -->
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header">
+					<div class="col-xs-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="primary-nav" role="navigation">
+					<?php
+					if (has_nav_menu('primary_navigation')) :
+						wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));
+					endif;
+					?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

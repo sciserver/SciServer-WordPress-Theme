@@ -11,10 +11,13 @@
  */
 $roots_includes = array(
   'lib/utils.php',           // Utility functions
+  'lib/website_select.php',  // Sets Class to control website options (IDIES, SDSS, SciServer, Etc)
   'lib/init.php',            // Initial theme setup and constants
+  'lib/idies_init.php',		 // IDIES initialization tasks //
   'lib/wrapper.php',         // Theme wrapper class
   'lib/sidebar.php',         // Sidebar class
   'lib/config.php',          // Configuration
+  'lib/idies_config.php',	 // IDIES configuration tasks //
   'lib/activation.php',      // Theme activation
   'lib/titles.php',          // Page titles
   'lib/nav.php',             // Custom nav modifications

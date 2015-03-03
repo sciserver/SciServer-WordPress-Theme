@@ -1,36 +1,49 @@
 /*!
  *-------------------------------------------------*
- * IDIES Brand Theme Customization
+ * IDIES Root Theme Customization
  * Base Variables
  *-------------------------------------------------*
  */
 
+@import "_font-awesome";
+
+ 
 /* ================================================
    Colors
    ================================================ */
-@brand-primary:         	#5189BC;
+@brand-primary:         	#5189BC;					//set your primary color here
 @brand-success:         	spin(@brand-primary, -30);
 @brand-info:            	spin(@brand-primary, 30);
 @brand-warning:         	spin(@brand-primary, 150);
 @brand-danger:          	spin(@brand-primary, 210);
+@brand-complement:			spin(@brand-primary,180);
 
 @brand-primary-pale:		lighten(@brand-primary, 90%);
 @brand-primary-light:		lighten(@brand-primary, 10%);
-@brand-primary-light:		lighten(@brand-primary, 10%);
 @brand-primary-lighter:		lighten(@brand-primary, 20%);
+@brand-primary-lightest:	lighten(@brand-primary, 30%);
 @brand-primary-dark:		darken(@brand-primary, 10%);
-@brand-primary-darker:		darken(@brand-primary, 20%);
+@brand-primary-darker:		darken(@brand-primary, 25%);
+@brand-primary-darkest:		darken(@brand-primary, 40%);
 
+@brand-complement-lighter:	lighten(@brand-complement, 44%);
+
+@gray-lightish:				lighten(@gray-base, 40.1%); // #666
 @gray-pale:					lighten(@gray-base, 70.6%); // #b4b4b4
 @gray-paler: 				lighten(@gray-base, 76.6%); // #f5f5f5;
 @gray-palest:				lighten(@gray-base, 91.0%); // #e8e8e8;
 @white: 					#fff;
 
+
 /* ================================================
    Font Paths and Imports
    ================================================ */
+//import fonts from google
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+@import url("//fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext");
+@import url("//fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic");
 
+//add fonts in local dirs
 @font-face {
     font-family: 'QuarkBold';
     src: url('../fonts/quark-bold.eot');
@@ -51,11 +64,21 @@
 @fa-font-path:        "../vendor/font-awesome/fonts/";
 
 /* ================================================
+   Layout
+   ================================================ */
+   
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-md-min;
+
+/* ================================================
    Typography
    ================================================ */
 
+@link-color:				@brand-primary;
 @link-hover-color:      	darken(@link-color, 15%);
 @link-hover-decoration: 	none;
+
+@text-color:				@gray-dark;
 
 .text-primary {
   .text-emphasis-variant(@brand-primary);
@@ -73,77 +96,142 @@
   .text-emphasis-variant(@brand-danger);
 }
 
-@font-size-base:          16px;
-@font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base:          14px;
+@font-family-sans-serif:  "Cabin", Helvetica, Arial, sans-serif;
+@font-family-base:        @font-family-sans-serif;
 
-@headings-font-family:    "QuarkBold", sans-serif;
+@headings-font-family:    "Oswald", Helvetica, Arial, sans-serif;
+@headings-color:          @gray-lightish;
 
 /* ================================================
    Header
    ================================================ */
+@header-logo-height: 		68px;
+
 header {
 	div.logo { 
-		
+		background-color:	@brand-complement-lighter;	
 		// remove comment if there is no banner logo, e.g. sdss
 		// display:none;
 		
 		// otherwise use this for right logo and left tagline
-		// e.g. sciserver
-		padding: 10px 0 22px 0;
+		padding: 15px 0 10px 0;
 	
 		img.header-logo {
-			max-height:86px;
-			margin: 0;
-			padding:0;
+			max-height:			@header-logo-height;
+			margin: 			0 auto auto 0;
+			
+			&.header-logo-right {
+				max-height:		@header-logo-height * 0.75;
+				margin: 		(@header-logo-height * 0.25) 0 0 auto !important;
+			}
 		}
-		
+		.blogname {
+			.h4;
+		}
 		.tagline {
 			font-size: 24px;
 			font-weight: 200;
 			text-align: right;
 		}
 	}
+	
 }
 	
 /* ================================================
    Footer
    ================================================ */
-footer.page-footer {
+footer.pagefooter {
 	
-	background-color: @brand-primary;
+	background-color: @brand-primary-darkest;
 	color: @white;
-	padding: 11px 0 16px 0 ;
-	.text-center;
-	
-	p {
-		
+	margin: 0 auto;
+	padding: 20px 0;
+	.text-left;
+
+	h2 {
+		color: @white;
 	}
-	img.footer-logo {
-		max-height: 60px;
-		padding-top:11px;
-		margin: 0 auto;
+	
+	img {
+		.img-responsive;
 	}
 }
 
 /* ================================================
    FrontPage
    ================================================ */
-	div.home {
+	body.home {
+		div.navbar {
+			margin-bottom:0;
+		}
+		main.main {
+			padding: 0;
+		}
 		section.intro {
 			padding: 50px 0;
 			margin: 0;
-			background: url('../img/splash.jpg') no-repeat bottom center fixed;
+			background: 				url('../img/splash.jpg') no-repeat bottom center fixed;
+			p {
+				padding:10px;
+				margin:0;
+				& .brand-heading {
+				}
+				& .brand-subheading {
+				}
+				& .brand-message {
+				}
+			}
 		}
-		p {
-			padding:10px;
-			margin:0;
-			& .brand-heading {
+		section.splash-widgets {
+			section.sidebar-splash {
+				margin:						16px;
+				padding:					0 16px;
+				.well;
+				.well-sm;
+				border-left: 				5px solid @brand-primary-dark;
+				h3 {
+					.text-center;
+				}
+				div.entry-summary {
+					p {
+						margin:				0;
+					}
+					a.more-link {
+						.btn;
+						.btn-primary;
+						margin-top: 9px;
+						display:table;
+					}
+				}
+				div.custom-field {
+					font-size:				@font-size-base;
+					margin-top:				9px;
+					&.custom-field-sponsor:before {
+						content: 			"Sponsor: "
+					}
+					&.custom-field-closing-date:before {
+						content: 			"Closing Date(s): "
+					}
+					&.custom-field-starting:before {
+						content: 			"Starting: "
+					}
+				}
 			}
-			& .brand-subheading {
+			hr {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				border: 0;
+				border-top: 1px solid #eee;
 			}
-			& .brand-message {
+		}
+		section.splash-explore {
+			background-color: @brand-primary-dark;
+
+			h3 {
+				color: #fff;
 			}
-		}		
+		}
 	}
 
 /* ================================================
@@ -189,5 +277,33 @@ footer.page-footer {
 /* ================================================
    Media
    ================================================ */
+
+// >= XS
+@media (min-width: @screen-xs-min) {
+}
+
+// >=SM
+@media (min-width: @screen-sm-min) {
+}   
+
+// >=MD
+@media (min-width: @screen-md-min) {
+}
+
+// ==LG
+@media (min-width: @screen-lg-min) {
+}  
+ 
+// ==XS
+@media (max-width: @screen-xs-max) {
+}
+
+// <=SM
+@media (max-width: @screen-sm-max) {
+}
+
+// <=MD
+@media (max-width: @screen-md-max) {
+}
 
 

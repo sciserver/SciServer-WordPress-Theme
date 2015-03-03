@@ -1,0 +1,257 @@
+/*!
+ *-------------------------------------------------*
+ * SciServer Brand Theme Customization
+ * Custom Variables
+ *-------------------------------------------------*
+ */
+
+/* ================================================
+   Colors
+   ================================================ */
+@brand-primary:         	#004e99;
+
+/* ================================================
+   Fonts
+   ================================================ */
+
+/* ================================================
+   Typography
+   ================================================ */
+
+@font-size-base:          14px;
+@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+@headings-font-family:    "QuarkBold", Helvetica, Arial, sans-serif;
+
+/* ================================================
+   Header
+   ================================================ */
+@header-logo-height: 		86px;
+
+header {
+	div.logo { 
+		padding:				10px 0 34px 0;
+		background-color:		@brand-primary-dark;
+		color:					@gray-palest;
+	}
+	div.tagline {
+		padding-top:			50px;	
+	}
+	&.navbar {
+		margin:0;
+		.navbar-header {
+			float:right;
+		}
+	}
+	&.navbar-default {
+		background-color: @gray-palest;
+		border-color: @gray-pale;
+
+		font-size: 16px;
+		color: @gray-darker;
+
+		ul.navbar-nav {
+			 >li {
+				& >a {
+					color: @gray-dark;
+					font-weight:400;
+				}
+				& >a:hover, >a:focus, {
+					color: @gray-darker;
+					font-weight:500;
+				}
+			}
+			& >li.active, >li.open {
+				& >a, >a:hover, >a:focus, {
+					color: @gray-darker;
+					font-weight:500;
+				}
+			}
+		}
+	}
+}
+/* ================================================
+   Footer
+   ================================================ */
+footer.pagefooter {
+	color:					@white;
+	background-color: 		@brand-primary-dark;
+	padding:				11px 0 16px 0 ;
+	-webkit-box-shadow: 	0 -4px 0 rgba(180, 180, 184, 0.85);
+	box-shadow: 			0 -4px 0 rgba(180, 180, 184, 0.85);
+		
+	h2 {
+		font-family:		@font-family-sans-serif;
+		font-size:			18px;
+		font-weight:		500px;
+		.text-center;
+		color:				@white;
+		padding-bottom:		6px;
+		margin:				0;
+	}
+	img {
+		.aligncenter;
+		max-height:68px;
+		padding-top:		11px;
+	}
+}
+
+/* ================================================
+   FrontPage
+   ================================================ */
+	body.home {
+		section.splash-slides {
+			.carousel, .notcarousel {	
+				height: 					auto; 			/* This is the full carousel height */
+				overflow:					hidden;
+				width:						100%;
+				margin:						0 auto 10 auto; 			/* center your carousel if other than 100% */ 
+			}
+			.carousel-control.left, .carousel-control.right, 
+			.carousel-control.left:hover, .carousel-control.right:hover, 
+			.carousel-control.left:focus, .carousel-control.right:focus {
+				background-image:			none;
+			}
+			.carousel-control {
+				& .glyphicon-chevron-left {
+					margin-left: 				-50%;
+				}
+				& .glyphicon-chevron-right {
+					margin-right:				-50%;
+				}
+			}
+			.slider-size {
+				height: 					500px; /* This is the slider div height */
+			}
+			.intro-message {
+				padding-top: 				10%;
+				max-width:					90%;
+				margin: 					0 auto;
+				.carousel-title, .carousel-subtitle, .carousel-button  {
+					font-family:				@headings-font-family;
+					background: 				rgba(0, 0, 0, 0.7);
+					padding: 					10px;
+					text-shadow: 		2px 2px 3px rgba(0,0,0,.9);
+					color: 				@white;
+					margin:				0;
+					.text-center;
+					a, a:hover, a:focus {
+						text-decoration: none;
+						color:@white;
+					}
+				}
+				.carousel-title {
+					line-height: 1.1;
+					margin-top: 22px;
+					margin-bottom: 11px;
+					color: #fff;
+					margin: 0 0 10px;
+					font-size: 100px;
+					font-weight: 700;
+					letter-spacing: 1px;
+				}
+				.carousel-subtitle {
+					margin: 0 0 20px;
+					font-size: 18px;
+				}
+				.carousel-button {
+					font-size: 					18px;
+					position: 					relative;
+					display: 					inline-block;
+					padding: 					5px;
+					margin-top:					20px;
+					float:						right;
+					text-align: 				right;
+					font-style: 				oblique;
+					background: 				rgba(0,0,0,.7);
+					border-left: 				5px solid @brand-danger;			
+				}
+			}
+		}
+	}
+
+/* ================================================
+   Search Results
+   ================================================ */
+
+/* ================================================
+   Archive
+   ================================================ */
+
+/* ================================================
+   NavBar
+   ================================================ */
+
+/* ================================================
+   DropDown 
+   ================================================ */
+
+/* ================================================
+   Buttons
+   ================================================ */
+
+/* ================================================
+   Tables
+   ================================================ */
+
+/* ================================================
+   Content Sections
+   ================================================ */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++
+   intro
+   ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++
+   sidebar
+   ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ================================================
+   WordPress Overrides
+   ================================================ */
+
+/* ================================================
+   Media
+   ================================================ */
+
+// >= XS
+@media (min-width: @screen-xs-min) {
+}
+
+// >=SM
+@media (min-width: @screen-sm-min) {
+}   
+
+// >=MD
+@media (min-width: @screen-md-min) {
+
+}
+
+// ==LG
+@media (min-width: @screen-lg-min) {
+}  
+ 
+// <=XS
+@media (max-width: @screen-xs-max) {
+	body.home {
+		section.splash-slides {
+			.intro-message {
+				.carousel-title {
+					font-size: 40px;
+				}
+			}
+			.slider-size {
+				height: 300px; 
+			}
+		}
+	}
+}
+
+// <=SM
+@media (max-width: @screen-sm-max) {
+}
+
+// <=MD
+@media (max-width: @screen-md-max) {
+}
+

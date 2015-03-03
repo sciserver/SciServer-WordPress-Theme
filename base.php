@@ -8,14 +8,16 @@
   <![endif]-->
 
   <?php
-    do_action('get_header');
-    get_template_part('templates/header');
+	//do_action('get_header');
+    //get_template_part('templates/header');
+	do_action('get_header' , $IDIES_Web->header_file);
+    get_template_part('templates/'.$IDIES_Web->header_file);
   ?>
 
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main" role="main">
-        <?php include roots_template_path(); ?>
+		<?php include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <aside class="sidebar" role="complementary">
@@ -25,7 +27,11 @@
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
-  <?php get_template_part('templates/footer'); ?>
+  
+<?php
+	//get_template_part('templates/footer'); 
+	get_template_part('templates/'.$IDIES_Web->footer_file); 
+?>
 
   <?php wp_footer(); ?>
 
