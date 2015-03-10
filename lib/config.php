@@ -59,6 +59,9 @@ function roots_display_sidebar() {
       array(
 	    'front-page.php',
         'no-sidebar.php',
+        'core-archive.php',
+        'component-archive.php',
+        'components.php',
 
       )
     );
