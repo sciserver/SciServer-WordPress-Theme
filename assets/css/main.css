@@ -8799,12 +8799,12 @@ body.home section.splash-explore h3 {
    Header
    ================================================ */
 header div.logo {
-  padding: 10px 0 34px 0;
+  padding: 10px 0 14px 0;
   background-color: #003466;
   color: #e8e8e8;
 }
 header div.tagline {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 header.navbar {
   margin: 0;
@@ -8846,19 +8846,30 @@ footer.pagefooter {
   -webkit-box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
   box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
 }
+footer.pagefooter p {
+  text-align: center;
+}
+footer.pagefooter a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+footer.pagefooter a:hover,
+footer.pagefooter a:focus {
+  color: #777777;
+}
 footer.pagefooter h2 {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500px;
   text-align: center;
   color: #ffffff;
   padding-bottom: 6px;
-  margin: 0;
+  margin: 16px 0 0 0 ;
 }
 footer.pagefooter img {
   display: block;
   margin: 10px auto;
-  max-height: 68px;
+  max-height: 90px;
   padding-top: 11px;
 }
 /* ================================================
@@ -8870,7 +8881,7 @@ body.home section.splash-slides .notcarousel {
   /* This is the full carousel height */
   overflow: hidden;
   width: 100%;
-  margin: 0 auto 10 auto;
+  margin: 0 auto;
   /* center your carousel if other than 100% */
 }
 body.home section.splash-slides .carousel-control.left,
@@ -8890,6 +8901,8 @@ body.home section.splash-slides .carousel-control .glyphicon-chevron-right {
 body.home section.splash-slides .slider-size {
   height: 500px;
   /* This is the slider div height */
+  margin-bottom: 30px;
+  /* Space between the slide and next slider or footer. */
 }
 body.home section.splash-slides .intro-message {
   padding-top: 10%;
@@ -8984,6 +8997,9 @@ body.home section.splash-slides .intro-message .carousel-button {
   }
   body.home section.splash-slides .slider-size {
     height: 300px;
+  }
+  header div.tagline {
+    padding-top: 10px;
   }
 }
 .comment-list ol {
