@@ -8860,7 +8860,7 @@ footer.pagefooter a:focus {
 footer.pagefooter h2 {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 22px;
-  font-weight: 500px;
+  font-weight: 500;
   text-align: center;
   color: #ffffff;
   padding-bottom: 6px;
@@ -8899,7 +8899,7 @@ body.home section.splash-slides .carousel-control .glyphicon-chevron-right {
   margin-right: -50%;
 }
 body.home section.splash-slides .slider-size {
-  height: 500px;
+  height: 400px;
   /* This is the slider div height */
   margin-bottom: 30px;
   /* Space between the slide and next slider or footer. */
@@ -8937,13 +8937,13 @@ body.home section.splash-slides .intro-message .carousel-title {
   margin-top: 22px;
   margin-bottom: 11px;
   color: #fff;
-  margin: 0 0 10px;
-  font-size: 100px;
+  margin: 0 0 10px 0;
+  font-size: 80px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 body.home section.splash-slides .intro-message .carousel-subtitle {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   font-size: 18px;
 }
 body.home section.splash-slides .intro-message .carousel-button {
@@ -8951,7 +8951,7 @@ body.home section.splash-slides .intro-message .carousel-button {
   position: relative;
   display: inline-block;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   float: right;
   text-align: right;
   font-style: oblique;
@@ -8996,7 +8996,7 @@ body.home section.splash-slides .intro-message .carousel-button {
     font-size: 40px;
   }
   body.home section.splash-slides .slider-size {
-    height: 300px;
+    height: 350px;
   }
   header div.tagline {
     padding-top: 10px;
