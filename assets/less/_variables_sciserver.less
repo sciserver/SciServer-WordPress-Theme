@@ -13,6 +13,9 @@
 /* ================================================
    Fonts
    ================================================ */
+body.page .glyphicon {
+	color:					@brand-primary;
+}
 
 /* ================================================
    Typography
@@ -37,7 +40,7 @@ header {
 	div.tagline {
 		padding-top:			30px;	
 	}
-	div.navbar {
+	.navbar, &.navbar {
 		margin:0;
 		.navbar-header {
 			float:right;
@@ -79,6 +82,7 @@ footer.pagefooter {
 	padding:								11px 0 16px 0 ;
 	-webkit-box-shadow: 					0 -4px 0 rgba(180, 180, 184, 0.85);
 	box-shadow:					 			0 -4px 0 rgba(180, 180, 184, 0.85);
+	margin-top:								20px;
 	p {
 		text-align:							center;
 	}	
@@ -91,17 +95,38 @@ footer.pagefooter {
 	}
 	h2 {
 		font-family:						@font-family-sans-serif;
-		font-size:							22px;
+		font-size:							18px;
 		font-weight:						500;
 		.text-center;
 		color:								@white;
 		padding-bottom:						6px;
-		margin:								16px 0 0 0 ;
 	}
 	img {
 		.aligncenter;
-		max-height:							90px;
-		padding-top:						11px;
+		.img-responsive;
+		margin:								16px auto;
+		&.idies-logo {max-height:						46px;}
+		&.jhu-logo {max-height:							46px;}
+		&.nsf-logo {max-height:							100px;}
+	}
+	ul {
+		.nav;
+		.nav-pills;
+		.nav-stacked;
+		font-weight:						300;
+		font-size:							2.0em;
+		li {
+			text-align:						center;
+			a {
+				background-color:			rgba(0,0,0,0.1);
+			}
+			a:hover, a:focus {
+				font-weight:				500;
+				color:						@gray-light;
+				background-color:			rgba(0,0,0,0.2);
+				
+			}
+		}
 	}
 }
 
@@ -130,7 +155,7 @@ footer.pagefooter {
 				}
 			}
 			.slider-size {
-				height: 					400px; /* This is the slider div height */
+				height: 					450px; /* This is the slider div height */
 				margin-bottom: 				30px; /* Space between the slide and next slider or footer. */
 			}
 			.intro-message {
@@ -201,9 +226,34 @@ footer.pagefooter {
    ================================================ */
 
 /* ================================================
-   Tables
+   Collapsible Accordions
    ================================================ */
+#accordion {
+	a {
+		color: 									@brand-primary-dark;
+	}
+	h3 {
+		font-size:									1.5em;
+	}
+	.panel-heading .accordion-toggle {
+		&:after {
+			font-family: 							'Glyphicons Halflings';  
+			content: 								"\e082";
+			float: 									left;
+			padding-right: 							15px;
+		}
+		&.collapsed:after {
+			content: 								"\e081";
+		}
+	}
+}
 
+/* ================================================
+   Wells
+   ================================================ */
+body.page.page-template-core-archive .well {
+	min-height: 220px;
+}
 /* ================================================
    Content Sections
    ================================================ */
@@ -264,6 +314,10 @@ footer.pagefooter {
 
 // <=SM
 @media (max-width: @screen-sm-max) {
+	body.page img.wp-post-image.alignright {
+		float:right;
+		margin-left:10px;
+	}
 }
 
 // <=MD

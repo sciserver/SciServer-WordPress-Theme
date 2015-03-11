@@ -6360,6 +6360,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+footer.pagefooter ul:before,
+footer.pagefooter ul:after,
 .form-horizontal .comment-form p:before,
 .form-horizontal .comment-form p:after {
   content: " ";
@@ -6380,6 +6382,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+footer.pagefooter ul:after,
 .form-horizontal .comment-form p:after {
   clear: both;
 }
@@ -8792,6 +8795,9 @@ body.home section.splash-explore h3 {
 /* ================================================
    Fonts
    ================================================ */
+body.page .glyphicon {
+  color: #004e99;
+}
 /* ================================================
    Typography
    ================================================ */
@@ -8806,9 +8812,11 @@ header div.logo {
 header div.tagline {
   padding-top: 30px;
 }
+header .navbar,
 header.navbar {
   margin: 0;
 }
+header .navbar .navbar-header,
 header.navbar .navbar-header {
   float: right;
 }
@@ -8845,6 +8853,7 @@ footer.pagefooter {
   padding: 11px 0 16px 0 ;
   -webkit-box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
   box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
+  margin-top: 20px;
 }
 footer.pagefooter p {
   text-align: center;
@@ -8859,18 +8868,107 @@ footer.pagefooter a:focus {
 }
 footer.pagefooter h2 {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
   padding-bottom: 6px;
-  margin: 16px 0 0 0 ;
 }
 footer.pagefooter img {
-  display: block;
   margin: 10px auto;
-  max-height: 90px;
-  padding-top: 11px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+}
+footer.pagefooter img.idies-logo {
+  max-height: 46px;
+}
+footer.pagefooter img.jhu-logo {
+  max-height: 46px;
+}
+footer.pagefooter img.nsf-logo {
+  max-height: 100px;
+}
+footer.pagefooter ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-weight: 300;
+  font-size: 2.0em;
+}
+footer.pagefooter ul > li {
+  position: relative;
+  display: block;
+}
+footer.pagefooter ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+footer.pagefooter ul > li > a:hover,
+footer.pagefooter ul > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+footer.pagefooter ul > li.disabled > a {
+  color: #777777;
+}
+footer.pagefooter ul > li.disabled > a:hover,
+footer.pagefooter ul > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+footer.pagefooter ul .open > a,
+footer.pagefooter ul .open > a:hover,
+footer.pagefooter ul .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #004e99;
+}
+footer.pagefooter ul .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+footer.pagefooter ul > li > a > img {
+  max-width: none;
+}
+footer.pagefooter ul > li {
+  float: left;
+}
+footer.pagefooter ul > li > a {
+  border-radius: 4px;
+}
+footer.pagefooter ul > li + li {
+  margin-left: 2px;
+}
+footer.pagefooter ul > li.active > a,
+footer.pagefooter ul > li.active > a:hover,
+footer.pagefooter ul > li.active > a:focus {
+  color: #ffffff;
+  background-color: #004e99;
+}
+footer.pagefooter ul > li {
+  float: none;
+}
+footer.pagefooter ul > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+footer.pagefooter ul li {
+  text-align: center;
+}
+footer.pagefooter ul li a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer.pagefooter ul li a:hover,
+footer.pagefooter ul li a:focus {
+  font-weight: 500;
+  color: #777777;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* ================================================
    FrontPage
@@ -8899,7 +8997,7 @@ body.home section.splash-slides .carousel-control .glyphicon-chevron-right {
   margin-right: -50%;
 }
 body.home section.splash-slides .slider-size {
-  height: 400px;
+  height: 450px;
   /* This is the slider div height */
   margin-bottom: 30px;
   /* Space between the slide and next slider or footer. */
@@ -8974,8 +9072,29 @@ body.home section.splash-slides .intro-message .carousel-button {
    Buttons
    ================================================ */
 /* ================================================
-   Tables
+   Collapsible Accordions
    ================================================ */
+#accordion a {
+  color: #003466;
+}
+#accordion h3 {
+  font-size: 1.5em;
+}
+#accordion .panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e082";
+  float: left;
+  padding-right: 15px;
+}
+#accordion .panel-heading .accordion-toggle.collapsed:after {
+  content: "\e081";
+}
+/* ================================================
+   Wells
+   ================================================ */
+body.page.page-template-core-archive .well {
+  min-height: 220px;
+}
 /* ================================================
    Content Sections
    ================================================ */
@@ -9000,6 +9119,12 @@ body.home section.splash-slides .intro-message .carousel-button {
   }
   header div.tagline {
     padding-top: 10px;
+  }
+}
+@media (max-width: 991px) {
+  body.page img.wp-post-image.alignright {
+    float: right;
+    margin-left: 10px;
   }
 }
 .comment-list ol {

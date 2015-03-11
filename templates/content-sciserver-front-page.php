@@ -25,7 +25,7 @@
 			<div class="carousel-subtitle"><a href="<?php echo $slide_slug ?>"><?php echo $slide_subtitle; ?></a></div>
 		<?php endif; ?>
 		<?php if (!empty($slide_button)) : ?>
-			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?></a></div>
+			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a></div>
 		<?php endif; ?>
 		</div>
 		</div>
@@ -66,7 +66,7 @@
 			<div class="carousel-subtitle"><a href="<?php echo $slide_slug ?>"><?php echo $slide_subtitle; ?></a></div>
 		<?php endif; ?>
 		<?php if (!empty($slide_button)) : ?>
-			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?><span class="glyphicon glyphicon-play" aria-hidden="true"></span></a></div>
+			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a></div>
 		<?php endif; ?>
 		</div>
 		</div>
