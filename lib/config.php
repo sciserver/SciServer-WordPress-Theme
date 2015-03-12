@@ -60,7 +60,7 @@ function roots_display_sidebar() {
 	    'front-page.php',
         'no-sidebar.php',
         'core-archive.php',
-        'components.php',
+        'carousel-accordion.php',
 
       )
     );

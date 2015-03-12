@@ -13,7 +13,7 @@
 /* ================================================
    Fonts
    ================================================ */
-body.page .glyphicon {
+body.page h3 span.glyphicon {
 	color:					@brand-primary;
 }
 
@@ -216,7 +216,31 @@ footer.pagefooter {
 /* ================================================
    NavBar
    ================================================ */
-
+body.page aside.sidebar .widget_nav_menu ul {
+	.nav;
+	.nav-pills;
+	.nav-stacked;
+	li>a {
+		background-color:		transparent;
+		color:					@brand-primary-dark;
+		font-weight:			400;
+		font-size:				1.2em;
+	}
+	li>a:hover, li.active>a:focus {
+		background-color:		rgba(0,0,0,0.1);
+		color:					@brand-primary-darker;
+		font-weight:			550;
+	}
+	li.active>a {
+		background-color:		transparent;
+		color:					@brand-primary-darker;
+	}
+	li.active>a:hover, li.active>a:focus {
+		background-color:		rgba(0,0,0,0.1);
+		color:					@brand-primary-darkest;
+		font-weight:			550;
+	}
+}
 /* ================================================
    DropDown 
    ================================================ */
@@ -235,7 +259,7 @@ footer.pagefooter {
 	h3 {
 		font-size:									1.5em;
 	}
-	.panel-heading .accordion-toggle {
+	.accordion-toggle {
 		&:after {
 			font-family: 							'Glyphicons Halflings';  
 			content: 								"\e082";
@@ -255,9 +279,25 @@ body.page.page-template-core-archive .well {
 	min-height: 220px;
 }
 /* ================================================
-   Content Sections
+   Accordion Carousel
    ================================================ */
-
+@carousel-dimension:         		200px;
+body.page.page-template-carousel-accordion {
+	.carousel  {	
+		height: 					@carousel-dimension; 			
+		overflow:					hidden;
+		width:						100%;
+		.item {
+			max-width:				@carousel-dimension;
+			margin:					0 auto; 			
+			overflow:				hidden;
+		}
+	}
+	img.thumbnail {
+			height:				@carousel-dimension;
+			width:				auto;
+	}
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++
    intro
    ++++++++++++++++++++++++++++++++++++++++++++++++ */

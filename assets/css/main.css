@@ -6362,6 +6362,8 @@ button.close {
 .modal-footer:after,
 footer.pagefooter ul:before,
 footer.pagefooter ul:after,
+body.page aside.sidebar .widget_nav_menu ul:before,
+body.page aside.sidebar .widget_nav_menu ul:after,
 .form-horizontal .comment-form p:before,
 .form-horizontal .comment-form p:after {
   content: " ";
@@ -6383,6 +6385,7 @@ footer.pagefooter ul:after,
 .panel-body:after,
 .modal-footer:after,
 footer.pagefooter ul:after,
+body.page aside.sidebar .widget_nav_menu ul:after,
 .form-horizontal .comment-form p:after {
   clear: both;
 }
@@ -8795,7 +8798,7 @@ body.home section.splash-explore h3 {
 /* ================================================
    Fonts
    ================================================ */
-body.page .glyphicon {
+body.page h3 span.glyphicon {
   color: #004e99;
 }
 /* ================================================
@@ -9065,6 +9068,94 @@ body.home section.splash-slides .intro-message .carousel-button {
 /* ================================================
    NavBar
    ================================================ */
+body.page aside.sidebar .widget_nav_menu ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+body.page aside.sidebar .widget_nav_menu ul > li {
+  position: relative;
+  display: block;
+}
+body.page aside.sidebar .widget_nav_menu ul > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+body.page aside.sidebar .widget_nav_menu ul > li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+body.page aside.sidebar .widget_nav_menu ul > li.disabled > a {
+  color: #777777;
+}
+body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+body.page aside.sidebar .widget_nav_menu ul .open > a,
+body.page aside.sidebar .widget_nav_menu ul .open > a:hover,
+body.page aside.sidebar .widget_nav_menu ul .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #004e99;
+}
+body.page aside.sidebar .widget_nav_menu ul .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+body.page aside.sidebar .widget_nav_menu ul > li > a > img {
+  max-width: none;
+}
+body.page aside.sidebar .widget_nav_menu ul > li {
+  float: left;
+}
+body.page aside.sidebar .widget_nav_menu ul > li > a {
+  border-radius: 4px;
+}
+body.page aside.sidebar .widget_nav_menu ul > li + li {
+  margin-left: 2px;
+}
+body.page aside.sidebar .widget_nav_menu ul > li.active > a,
+body.page aside.sidebar .widget_nav_menu ul > li.active > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li.active > a:focus {
+  color: #ffffff;
+  background-color: #004e99;
+}
+body.page aside.sidebar .widget_nav_menu ul > li {
+  float: none;
+}
+body.page aside.sidebar .widget_nav_menu ul > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+body.page aside.sidebar .widget_nav_menu ul li > a {
+  background-color: transparent;
+  color: #003466;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+body.page aside.sidebar .widget_nav_menu ul li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000d19;
+  font-weight: 550;
+}
+body.page aside.sidebar .widget_nav_menu ul li.active > a {
+  background-color: transparent;
+  color: #000d19;
+}
+body.page aside.sidebar .widget_nav_menu ul li.active > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-weight: 550;
+}
 /* ================================================
    DropDown 
    ================================================ */
@@ -9080,13 +9171,13 @@ body.home section.splash-slides .intro-message .carousel-button {
 #accordion h3 {
   font-size: 1.5em;
 }
-#accordion .panel-heading .accordion-toggle:after {
+#accordion .accordion-toggle:after {
   font-family: 'Glyphicons Halflings';
   content: "\e082";
   float: left;
   padding-right: 15px;
 }
-#accordion .panel-heading .accordion-toggle.collapsed:after {
+#accordion .accordion-toggle.collapsed:after {
   content: "\e081";
 }
 /* ================================================
@@ -9096,8 +9187,23 @@ body.page.page-template-core-archive .well {
   min-height: 220px;
 }
 /* ================================================
-   Content Sections
+   Accordion Carousel
    ================================================ */
+body.page.page-template-carousel-accordion .carousel {
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+body.page.page-template-carousel-accordion .carousel .item {
+  max-width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body.page.page-template-carousel-accordion img.thumbnail,
+body.page.page-template-carousel-accordion img.wp-caption {
+  height: 200px;
+  width: auto;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++
    intro
    ++++++++++++++++++++++++++++++++++++++++++++++++ */
