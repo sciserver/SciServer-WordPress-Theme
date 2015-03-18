@@ -135,18 +135,18 @@ footer.pagefooter {
    ================================================ */
 	body.home {
 		section.splash-slides {
-			.carousel, .notcarousel {	
-				height: 					auto; 			/* This is the full carousel height */
+			.carouslide, .notcarouslide {	
+				height: 					auto; 			/* This is the full carouslide height */
 				overflow:					hidden;
 				width:						100%;
-				margin:						0 auto; 			/* center your carousel if other than 100% */ 
+				margin:						0 auto; 			/* center your carouslide if other than 100% */ 
 			}
-			.carousel-control.left, .carousel-control.right, 
-			.carousel-control.left:hover, .carousel-control.right:hover, 
-			.carousel-control.left:focus, .carousel-control.right:focus {
+			.carouslide-control.left, .carouslide-control.right, 
+			.carouslide-control.left:hover, .carouslide-control.right:hover, 
+			.carouslide-control.left:focus, .carouslide-control.right:focus {
 				background-image:			none;
 			}
-			.carousel-control {
+			.carouslide-control {
 				& .glyphicon-chevron-left {
 					margin-left: 				-50%;
 				}
@@ -162,7 +162,7 @@ footer.pagefooter {
 				padding-top: 				10%;
 				max-width:					90%;
 				margin: 					0 auto;
-				.carousel-title, .carousel-subtitle, .carousel-button  {
+				.carouslide-title, .carouslide-subtitle, .carouslide-button  {
 					font-family:			@headings-font-family;
 					background: 			rgba(0, 0, 0, 0.7);
 					padding: 				10px;
@@ -175,7 +175,7 @@ footer.pagefooter {
 						color:@white;
 					}
 				}
-				.carousel-title {
+				.carouslide-title {
 					line-height: 			1.1;
 					margin-top: 			22px;
 					margin-bottom: 			11px;
@@ -185,11 +185,11 @@ footer.pagefooter {
 					font-weight: 			700;
 					letter-spacing: 		1px;
 				}
-				.carousel-subtitle {
+				.carouslide-subtitle {
 					margin: 				0 0 10px;
 					font-size: 				18px;
 				}
-				.carousel-button {
+				.carouslide-button {
 					font-size: 				18px;
 					position: 				relative;
 					display: 				inline-block;
@@ -279,22 +279,22 @@ body.page.page-template-core-archive .well {
 	min-height: 220px;
 }
 /* ================================================
-   Accordion Carousel
+   Accordion Carouslide
    ================================================ */
-@carousel-dimension:         		200px;
-body.page.page-template-carousel-accordion {
-	.carousel  {	
-		height: 					@carousel-dimension; 			
+@carouslide-dimension:         		200px;
+body.page.page-template-carouslide-accordion {
+	.carouslide  {	
+		height: 					@carouslide-dimension; 			
 		overflow:					hidden;
 		width:						100%;
 		.item {
-			max-width:				@carousel-dimension;
+			max-width:				@carouslide-dimension;
 			margin:					0 auto; 			
 			overflow:				hidden;
 		}
 	}
 	img.thumbnail {
-			height:				@carousel-dimension;
+			height:				@carouslide-dimension;
 			width:				auto;
 	}
 }
@@ -336,7 +336,7 @@ body.page.page-template-carousel-accordion {
 	body.home {
 		section.splash-slides {
 			.intro-message {
-				.carousel-title {
+				.carouslide-title {
 					font-size: 40px;
 				}
 			}
