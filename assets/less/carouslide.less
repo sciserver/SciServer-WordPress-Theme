@@ -95,13 +95,13 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: @carouslide-control-width;
-  .opacity(@carouslide-control-opacity);
-  font-size: @carouslide-control-font-size;
-  color: @carouslide-control-color;
+  width: @carousel-control-width;
+  .opacity(@carousel-control-opacity);
+  font-size: @carousel-control-font-size;
+  color: @carousel-control-color;
   text-align: center;
-  text-shadow: @carouslide-text-shadow;
-  // We can't have this transition here because WebKit cancels the carouslide
+  text-shadow: @carousel-text-shadow;
+  // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
   // Set gradients for backgrounds
@@ -118,7 +118,7 @@
   &:hover,
   &:focus {
     outline: 0;
-    color: @carouslide-control-color;
+    color: @carousel-control-color;
     text-decoration: none;
     .opacity(.9);
   }
@@ -186,7 +186,7 @@
     height: 10px;
     margin: 1px;
     text-indent: -999px;
-    border: 1px solid @carouslide-indicator-border-color;
+    border: 1px solid @carousel-indicator-border-color;
     border-radius: 10px;
     cursor: pointer;
 
@@ -205,7 +205,7 @@
     margin: 0;
     width:  12px;
     height: 12px;
-    background-color: @carouslide-indicator-active-bg;
+    background-color: @carousel-indicator-active-bg;
   }
 }
 
@@ -220,9 +220,9 @@
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: @carouslide-caption-color;
+  color: @carousel-caption-color;
   text-align: center;
-  text-shadow: @carouslide-text-shadow;
+  text-shadow: @carousel-text-shadow;
   & .btn {
     text-shadow: none; // No shadow for button elements in carouslide-caption
   }

@@ -135,18 +135,18 @@ footer.pagefooter {
    ================================================ */
 	body.home {
 		section.splash-slides {
-			.carouslide, .notcarouslide {	
-				height: 					auto; 			/* This is the full carouslide height */
+			.carousel, .notcarousel {	
+				height: 					auto; 			/* This is the full carousel height */
 				overflow:					hidden;
 				width:						100%;
-				margin:						0 auto; 			/* center your carouslide if other than 100% */ 
+				margin:						0 auto; 			/* center your carousel if other than 100% */ 
 			}
-			.carouslide-control.left, .carouslide-control.right, 
-			.carouslide-control.left:hover, .carouslide-control.right:hover, 
-			.carouslide-control.left:focus, .carouslide-control.right:focus {
+			.carousel-control.left, .carousel-control.right, 
+			.carousel-control.left:hover, .carousel-control.right:hover, 
+			.carousel-control.left:focus, .carousel-control.right:focus {
 				background-image:			none;
 			}
-			.carouslide-control {
+			.carousel-control {
 				& .glyphicon-chevron-left {
 					margin-left: 				-50%;
 				}
@@ -162,7 +162,7 @@ footer.pagefooter {
 				padding-top: 				10%;
 				max-width:					90%;
 				margin: 					0 auto;
-				.carouslide-title, .carouslide-subtitle, .carouslide-button  {
+				.carousel-title, .carousel-subtitle, .carousel-button  {
 					font-family:			@headings-font-family;
 					background: 			rgba(0, 0, 0, 0.7);
 					padding: 				10px;
@@ -175,7 +175,7 @@ footer.pagefooter {
 						color:@white;
 					}
 				}
-				.carouslide-title {
+				.carousel-title {
 					line-height: 			1.1;
 					margin-top: 			22px;
 					margin-bottom: 			11px;
@@ -185,11 +185,11 @@ footer.pagefooter {
 					font-weight: 			700;
 					letter-spacing: 		1px;
 				}
-				.carouslide-subtitle {
+				.carousel-subtitle {
 					margin: 				0 0 10px;
 					font-size: 				18px;
 				}
-				.carouslide-button {
+				.carousel-button {
 					font-size: 				18px;
 					position: 				relative;
 					display: 				inline-block;
@@ -250,6 +250,57 @@ body.page aside.sidebar .widget_nav_menu ul {
    ================================================ */
 
 /* ================================================
+   Carouslide
+   ================================================ */
+section.carouslides {
+	overflow:					hidden;
+	width:						100%;
+	img.thumbnail {
+			width:				20%;
+	}
+	.carousel-caption {
+		font-size:				medium;
+		margin-bottom:			0px;
+		color:					#333;
+		position:				initial;
+	}
+	
+	.carousel-control {
+		opacity: 		0.8;
+		&.left, &.right {
+			background-image:none;
+		}
+	}
+	.carousel-control .glyphicon-chevron-left,
+	.carousel-control .glyphicon-chevron-right {
+		margin-left: -25%;
+		margin-top: -35%;
+	}
+	.carousel-inner > .item.next, 
+	.carousel-inner > .item.active.right { 
+		-webkit-transform: 	translate3d(16.7%, 0, 0) !important;
+		transform:			translate3d(16.7%, 0, 0)!important;
+		left: 0 !important;
+	}
+	.carousel-inner > .item.prev,
+	.carousel-inner > .item.active.left  {
+		-webkit-transform: 	translate3d( -16.7%, 0, 0) !important;
+		transform:			translate3d( -16.7%, 0, 0) !important;
+		left: 				0 !important;
+	}
+	.carousel-inner > .item.next.left,
+	.carousel-inner > .item.prev.right,
+	.carousel-inner > .item.active {
+		-webkit-transform: 	translate3d(0, 0, 0) !important;
+		transform: 			translate3d(0, 0, 0) !important;
+    left: 					0 !important;
+  }
+  .carousel-inner > .item {
+		background: white; 
+	}		
+}
+
+/* ================================================
    Collapsible Accordions
    ================================================ */
 #accordion {
@@ -277,26 +328,6 @@ body.page aside.sidebar .widget_nav_menu ul {
    ================================================ */
 body.page.page-template-core-archive .well {
 	min-height: 220px;
-}
-/* ================================================
-   Accordion Carouslide
-   ================================================ */
-@carouslide-dimension:         		200px;
-body.page.page-template-carouslide-accordion {
-	.carouslide  {	
-		height: 					@carouslide-dimension; 			
-		overflow:					hidden;
-		width:						100%;
-		.item {
-			max-width:				@carouslide-dimension;
-			margin:					0 auto; 			
-			overflow:				hidden;
-		}
-	}
-	img.thumbnail {
-			height:				@carouslide-dimension;
-			width:				auto;
-	}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++
    intro

@@ -27,7 +27,7 @@ Class IDIES_Web {
 				$this->splash_widgets=1;
 				break;
 			case 'sciserver';
-				$this->footer_widgets=3;
+				$this->footer_widgets=2;
 				$this->splash_widgets=1;
 				break;
 				

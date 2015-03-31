@@ -11,58 +11,88 @@ $carousel_items = get_pages( array( 'parent' => get_the_ID(),
 										'post_type' => 'page',
 										'post_status' => 'publish',
 										) ) ; 
-if (empty($carousel_items)) return;
+										
+if (empty($carousel_items)) {return;}
 
-// Count the menu items
-$carousel_menu_items = 1;
-$lg_show_hide=" col-lg-2 ";
-$md_show_hide=" col-md-3 ";
-$sm_show_hide=" col-sm-4 ";
-$xs_show_hide=" col-xs-6 ";
+$show_lg = 6;
+$show_md = 4;
+$show_sm = 3;
+$show_xs = 1;
+
 ?>
-<div id="accordion">
-	<div class="row">
+<section class="carouslides" >
+<div id="caraccordion" >
+<div id="carouslides" class="carousel slide " data-ride="carousel">
+<div class="carousel-inner" role="listbox">
 <?php
-		foreach ($carousel_items as $this_core_page) :
+$slide_class = 'item active'; 
+$collapse_collapsed = '';
+$show_max = $show_lg;
 
-			if ($carousel_menu_items >6) { $lg_show_hide=" hidden-lg "; }
-			elseif ($carousel_menu_items >4) { $md_show_hide=" hidden-md "; }
-			elseif ($carousel_menu_items >3) { $sm_show_hide=" hidden-sm "; }
-			elseif ($carousel_menu_items >2) { $xs_show_hide=" hidden-xs "; }
+$carousel_menu_items = count($carousel_items);
 
+//number of menu rows to show
+for ( $jndx=0; $jndx < $carousel_menu_items; $jndx++ ) :
+	$show_hide = "  col-lg-2 col-md-3 col-sm-4 col-xs-6 ";
+	$this_menu_item = 1;
 ?>
-			<div class="<?php echo $lg_show_hide . $md_show_hide . $sm_show_hide . $xs_show_hide; ?> ">
+	<div class="<?php echo $slide_class; ?>">
+<?php
+	//number of items on each row
+	for ( $indx=0; $indx < $carousel_menu_items; $indx++ ) :
+	
+		if ($this_menu_item >6) { $show_hide .= " hidden-lg "; }
+		elseif ($this_menu_item >4) { $show_hide .= " hidden-md "; }
+		elseif ($this_menu_item >3) { $show_hide .= " hidden-sm "; }
+		elseif ($this_menu_item >2) { $show_hide .= " hidden-xs "; }
+
+		$thisindx = ( ( $indx + $jndx >=  $carousel_menu_items ) ) ? ( $indx + $jndx -  $carousel_menu_items ) : $indx + $jndx ;
+?>
+		<div class="<?php echo $show_hide; ?> ">
 			<div class="thumbnail">
-			<?php echo get_the_post_thumbnail( $this_core_page->ID , 'thumbnail' , array('class' => " img-responsive alignright") ); ?>
-			<div class="text-center"><strong><?php echo $this_core_page->post_title; ?></strong></div>
+					<a data-toggle="collapse" class="<?php echo $collapse_collapsed; ?>" data-parent="#caraccordion" href="#collapse<?php echo $thisindx; ?>" >
+					<?php echo get_the_post_thumbnail( $carousel_items{$thisindx}->ID , 'thumbnail' , array('class' => " img-responsive") ); ?>
+					</a>
+				<div class="carousel-caption">
+					<a data-toggle="collapse" data-parent="#caraccordion" href="#collapse<?php echo $thisindx; ?>" >
+					<?php echo $carousel_items{$thisindx}->post_title; ?></a>
+				</div>
 			</div>
-			</div>
+		</div>
 <?php
-			$carousel_menu_items++;
-		endforeach;
-		
-		/*foreach( $carousel_meta as $key => $value ) :
-		
-			$slide_title = the_cfc_field('carousel-meta', 'title', false, $key , false); 
-			$slide_subtitle = the_cfc_field('carousel-meta', 'subtitle', false, $key , false); 
-			$slide_leadp = the_cfc_field('carousel-meta', 'lead-paragraph', false, $key , false); 
-			$slide_url = esc_url( the_cfc_field('carousel-meta', 'url', false, $key , false )); 
-			$slide_url_text = the_cfc_field('carousel-meta', 'url-text', false, $key , false ); 
-			$slide_thumbnail = the_cfc_field('carousel-meta', 'thumbnail', false, $key , false ); 
-			$slide_caption = the_cfc_field('carousel-meta', 'caption', false, $key , false ); 
-	?>	
-			<div class="<?php echo $slide_class; ?>">
-			<img src="<?php echo $slide_thumbnail; ?>" class="thumbnail" alt="<?php echo esc_html($slide_title); ?>">
-			<div class="carousel-caption"><?php echo $slide_title; ?></div>
-			</div>
-	<?php	
-			$slide_class = 'item'; 
-		endforeach; */
+		$this_menu_item++;
+	endfor;
 ?>
 	</div>
-	<div class="row">
-	</div>
+<?php
+	$slide_class = 'item'; 
+	$collapse_collapsed = 'collapsed';
+endfor;
+?>
 </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carouslides" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" ></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carouslides" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" "></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+<?php
+// Show the  collapsible elements
+$collapse_in = 'in';
+for ( $jndx=0; $jndx < $carousel_menu_items; $jndx++ ) :
+?>
+	<div id="collapse<?php echo $jndx; ?>" class="collapse <?php echo $collapse_in ?>" >Show<?php echo $jndx; ?>
+	</div>
+<?php
+	$collapse_in = '';
+endfor;
+?>
+</div>
+</section>
 <?php
 //end Carousel Accordion Template.
 ?>

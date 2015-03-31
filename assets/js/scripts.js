@@ -416,7 +416,7 @@
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
     if ($.support.transition && this.$element.hasClass('slide')) {
       $next.addClass(type)
-      $next[0].offsetWidth // force reflow
+      $next[0].offsetWidth/6 // force reflow
       $active.addClass(direction)
       $next.addClass(direction)
       $active
@@ -2290,7 +2290,7 @@
   })
 
 }(jQuery);
-;/* ========================================================================
+;;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *

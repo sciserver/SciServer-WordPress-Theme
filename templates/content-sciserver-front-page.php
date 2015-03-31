@@ -75,6 +75,19 @@
 <?php endif; ?>
 </div>
 </div>
-</section><?php
+</section>
+<section class="splash-intro" >
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<?php
+the_post(); 
+the_content(); 
+?>
+</div>
+</div>
+</div>
+</section>
+<?php
 //end Front Page Template.
 ?>

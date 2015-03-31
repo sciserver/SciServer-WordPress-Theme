@@ -929,6 +929,8 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img,
+.carouslide-inner > .item > img,
+.carouslide-inner > .item > a > img,
 .wp-caption > img,
 .wp-caption a > img {
   display: block;
@@ -6645,6 +6647,228 @@ body.page aside.sidebar .widget_nav_menu ul:after,
  * unique variables for that theme.
  *-------------------------------------------------*
  */
+.carouslide {
+  position: relative;
+}
+.carouslide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carouslide-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carouslide-inner > .item > img,
+.carouslide-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carouslide-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+         -o-transition: -o-transform 0.6s ease-in-out;
+            transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+  }
+  .carouslide-inner > .item.next,
+  .carouslide-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carouslide-inner > .item.prev,
+  .carouslide-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carouslide-inner > .item.next.left,
+  .carouslide-inner > .item.prev.right,
+  .carouslide-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.carouslide-inner > .active,
+.carouslide-inner > .next,
+.carouslide-inner > .prev {
+  display: block;
+}
+.carouslide-inner > .active {
+  left: 0;
+}
+.carouslide-inner > .next,
+.carouslide-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carouslide-inner > .next {
+  left: 100%;
+}
+.carouslide-inner > .prev {
+  left: -100%;
+}
+.carouslide-inner > .next.left,
+.carouslide-inner > .prev.right {
+  left: 0;
+}
+.carouslide-inner > .active.left {
+  left: -100%;
+}
+.carouslide-inner > .active.right {
+  left: 100%;
+}
+.carouslide-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carouslide-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carouslide-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carouslide-control:hover,
+.carouslide-control:focus {
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carouslide-control .icon-prev,
+.carouslide-control .icon-next,
+.carouslide-control .glyphicon-chevron-left,
+.carouslide-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carouslide-control .icon-prev,
+.carouslide-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carouslide-control .icon-next,
+.carouslide-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carouslide-control .icon-prev,
+.carouslide-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  font-family: serif;
+}
+.carouslide-control .icon-prev:before {
+  content: '\2039';
+}
+.carouslide-control .icon-next:before {
+  content: '\203a';
+}
+.carouslide-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carouslide-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carouslide-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+.carouslide-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carouslide-caption .btn,
+.carouslide-caption .comment-form input[type="submit"] {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carouslide-control .glyphicon-chevron-left,
+  .carouslide-control .glyphicon-chevron-right,
+  .carouslide-control .icon-prev,
+  .carouslide-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carouslide-control .glyphicon-chevron-left,
+  .carouslide-control .icon-prev {
+    margin-left: -15px;
+  }
+  .carouslide-control .glyphicon-chevron-right,
+  .carouslide-control .icon-next {
+    margin-right: -15px;
+  }
+  .carouslide-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carouslide-indicators {
+    bottom: 20px;
+  }
+}
 /*!
  *-------------------------------------------------*
  * IDIES Root Theme Customization
@@ -8529,6 +8753,30 @@ a.text-warning:hover {
 a.text-danger:hover {
   color: #666500;
 }
+span.x-small,
+p.x-small {
+  font-size: x-small;
+}
+span.small,
+p.small {
+  font-size: small;
+}
+span.medium,
+p.medium {
+  font-size: medium;
+}
+span.large,
+p.large {
+  font-size: large;
+}
+span.x-large,
+p.x-large {
+  font-size: x-large;
+}
+span.sans,
+p.sans {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
 /* ================================================
    Header
    ================================================ */
@@ -9163,6 +9411,57 @@ body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
    Buttons
    ================================================ */
 /* ================================================
+   Carouslide
+   ================================================ */
+section.carouslides {
+  overflow: hidden;
+  width: 100%;
+}
+section.carouslides img.thumbnail,
+section.carouslides img.wp-caption {
+  width: 20%;
+}
+section.carouslides .carousel-caption {
+  font-size: medium;
+  margin-bottom: 0px;
+  color: #333;
+  position: initial;
+}
+section.carouslides .carousel-control {
+  opacity: 0.8;
+}
+section.carouslides .carousel-control.left,
+section.carouslides .carousel-control.right {
+  background-image: none;
+}
+section.carouslides .carousel-control .glyphicon-chevron-left,
+section.carouslides .carousel-control .glyphicon-chevron-right {
+  margin-left: -25%;
+  margin-top: -35%;
+}
+section.carouslides .carousel-inner > .item.next,
+section.carouslides .carousel-inner > .item.active.right {
+  -webkit-transform: translate3d(16.7%, 0, 0) !important;
+  transform: translate3d(16.7%, 0, 0) !important;
+  left: 0 !important;
+}
+section.carouslides .carousel-inner > .item.prev,
+section.carouslides .carousel-inner > .item.active.left {
+  -webkit-transform: translate3d(-16.7%, 0, 0) !important;
+  transform: translate3d(-16.7%, 0, 0) !important;
+  left: 0 !important;
+}
+section.carouslides .carousel-inner > .item.next.left,
+section.carouslides .carousel-inner > .item.prev.right,
+section.carouslides .carousel-inner > .item.active {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  left: 0 !important;
+}
+section.carouslides .carousel-inner > .item {
+  background: white;
+}
+/* ================================================
    Collapsible Accordions
    ================================================ */
 #accordion a {
@@ -9186,24 +9485,6 @@ body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
 body.page.page-template-core-archive .well {
   min-height: 220px;
 }
-/* ================================================
-   Accordion Carousel
-   ================================================ */
-body.page.page-template-carousel-accordion .carousel {
-  height: 200px;
-  overflow: hidden;
-  width: 100%;
-}
-body.page.page-template-carousel-accordion .carousel .item {
-  max-width: 200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-body.page.page-template-carousel-accordion img.thumbnail,
-body.page.page-template-carousel-accordion img.wp-caption {
-  height: 200px;
-  width: auto;
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++
    intro
    ++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -9217,7 +9498,7 @@ body.page.page-template-carousel-accordion img.wp-caption {
    Media
    ================================================ */
 @media (max-width: 767px) {
-  body.home section.splash-slides .intro-message .carousel-title {
+  body.home section.splash-slides .intro-message .carouslide-title {
     font-size: 40px;
   }
   body.home section.splash-slides .slider-size {
