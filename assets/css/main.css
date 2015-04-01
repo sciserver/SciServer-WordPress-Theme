@@ -9224,43 +9224,22 @@ footer.pagefooter ul li a:focus {
 /* ================================================
    FrontPage
    ================================================ */
-body.home section.splash-slides .carousel,
-body.home section.splash-slides .notcarousel {
-  height: auto;
-  /* This is the full carousel height */
+body.home section.splash .splash-screen {
+  height: 250px;
   overflow: hidden;
   width: 100%;
-  margin: 0 auto;
-  /* center your carousel if other than 100% */
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
-body.home section.splash-slides .carousel-control.left,
-body.home section.splash-slides .carousel-control.right,
-body.home section.splash-slides .carousel-control.left:hover,
-body.home section.splash-slides .carousel-control.right:hover,
-body.home section.splash-slides .carousel-control.left:focus,
-body.home section.splash-slides .carousel-control.right:focus {
-  background-image: none;
-}
-body.home section.splash-slides .carousel-control .glyphicon-chevron-left {
-  margin-left: -50%;
-}
-body.home section.splash-slides .carousel-control .glyphicon-chevron-right {
-  margin-right: -50%;
-}
-body.home section.splash-slides .slider-size {
-  height: 450px;
-  /* This is the slider div height */
-  margin-bottom: 30px;
-  /* Space between the slide and next slider or footer. */
-}
-body.home section.splash-slides .intro-message {
-  padding-top: 10%;
+body.home section.splash .intro-message {
+  padding-top: 30px;
   max-width: 90%;
   margin: 0 auto;
 }
-body.home section.splash-slides .intro-message .carousel-title,
-body.home section.splash-slides .intro-message .carousel-subtitle,
-body.home section.splash-slides .intro-message .carousel-button {
+body.home section.splash .intro-message .splash-title,
+body.home section.splash .intro-message .splash-subtitle {
   font-family: "QuarkBold", Helvetica, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -9269,19 +9248,16 @@ body.home section.splash-slides .intro-message .carousel-button {
   margin: 0;
   text-align: center;
 }
-body.home section.splash-slides .intro-message .carousel-title a,
-body.home section.splash-slides .intro-message .carousel-subtitle a,
-body.home section.splash-slides .intro-message .carousel-button a,
-body.home section.splash-slides .intro-message .carousel-title a:hover,
-body.home section.splash-slides .intro-message .carousel-subtitle a:hover,
-body.home section.splash-slides .intro-message .carousel-button a:hover,
-body.home section.splash-slides .intro-message .carousel-title a:focus,
-body.home section.splash-slides .intro-message .carousel-subtitle a:focus,
-body.home section.splash-slides .intro-message .carousel-button a:focus {
+body.home section.splash .intro-message .splash-title a,
+body.home section.splash .intro-message .splash-subtitle a,
+body.home section.splash .intro-message .splash-title a:hover,
+body.home section.splash .intro-message .splash-subtitle a:hover,
+body.home section.splash .intro-message .splash-title a:focus,
+body.home section.splash .intro-message .splash-subtitle a:focus {
   text-decoration: none;
   color: #ffffff;
 }
-body.home section.splash-slides .intro-message .carousel-title {
+body.home section.splash .intro-message .splash-title {
   line-height: 1.1;
   margin-top: 22px;
   margin-bottom: 11px;
@@ -9291,21 +9267,78 @@ body.home section.splash-slides .intro-message .carousel-title {
   font-weight: 700;
   letter-spacing: 1px;
 }
-body.home section.splash-slides .intro-message .carousel-subtitle {
+body.home section.splash .intro-message .splash-subtitle {
   margin: 0 0 10px;
   font-size: 18px;
 }
-body.home section.splash-slides .intro-message .carousel-button {
-  font-size: 18px;
-  position: relative;
-  display: inline-block;
-  padding: 5px;
-  margin-top: 10px;
-  float: right;
-  text-align: right;
-  font-style: oblique;
-  background: rgba(0, 0, 0, 0.7);
-  border-left: 5px solid #999800;
+body.home section.splash-teaser {
+  /*
+*/
+}
+body.home section.splash-teaser div.panel-splash-teaser {
+  border-color: #dddddd;
+}
+body.home section.splash-teaser div.panel-splash-teaser > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+body.home section.splash-teaser div.panel-splash-teaser > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #dddddd;
+}
+body.home section.splash-teaser div.panel-splash-teaser > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333333;
+}
+body.home section.splash-teaser div.panel-splash-teaser > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #dddddd;
+}
+body.home section.splash-teaser div.panel-splash-teaser .panel-heading {
+  text-align: center;
+  font-size: -webkit-xxx-large;
+  color: #004e99;
+}
+body.home section.splash-teaser div.panel-splash-teaser .panel-body {
+  color: #333333;
+}
+body.home section.splash-teaser div.panel-splash-teaser .panel-body .entry-title {
+  text-align: -webkit-center;
+}
+body.home section.splash-teaser div.panel-splash-teaser-1 .panel-heading > a {
+  color: #009998;
+}
+body.home section.splash-teaser div.panel-splash-teaser-1 .panel-heading > a:hover {
+  color: #006665;
+}
+body.home section.splash-teaser div.panel-splash-teaser-2 .panel-heading > a {
+  color: #004e99;
+}
+body.home section.splash-teaser div.panel-splash-teaser-2 .panel-heading > a:hover {
+  color: #003466;
+}
+body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a {
+  color: #000199;
+}
+body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a:hover {
+  color: #000166;
+}
+body.home section.splash-teaser div.panel-splash-teaser-4 .panel-heading > a {
+  color: #999800;
+}
+body.home section.splash-teaser div.panel-splash-teaser-4 .panel-heading > a:hover {
+  color: #666500;
+}
+body.home section.splash-teaser div.panel-splash-teaser-5 .panel-heading > a {
+  color: #994b00;
+}
+body.home section.splash-teaser div.panel-splash-teaser-5 .panel-heading > a:hover {
+  color: #663200;
+}
+body.home section.splash-teaser div.panel-splash-teaser-6 .panel-heading > a {
+  color: #990001;
+}
+body.home section.splash-teaser div.panel-splash-teaser-6 .panel-heading > a:hover {
+  color: #660001;
 }
 /* ================================================
    Search Results
@@ -9498,11 +9531,8 @@ body.page.page-template-core-archive .well {
    Media
    ================================================ */
 @media (max-width: 767px) {
-  body.home section.splash-slides .intro-message .carouslide-title {
-    font-size: 40px;
-  }
-  body.home section.splash-slides .slider-size {
-    height: 350px;
+  body.home section.splash .intro-message .splash-title {
+    font-size: 60px;
   }
   header div.tagline {
     padding-top: 10px;
@@ -9512,6 +9542,11 @@ body.page.page-template-core-archive .well {
   body.page img.wp-post-image.alignright {
     float: right;
     margin-left: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  body.home section.splash .splash-screen {
+    height: 300px;
   }
 }
 .comment-list ol {

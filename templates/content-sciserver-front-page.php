@@ -1,78 +1,68 @@
 <?php 
 // Show the intro splash image with overlay of h1 and image caption and show page content below image
 ?>
-<section class="splash-slides" >
-<?php // Show carousel on all but xs screens ?>
-<div id="splash-carousel" class="carousel slide hidden-xs" data-ride="carousel">
-<div class="carousel-inner" role="listbox">
-<?php if ( function_exists( 'get_cfc_meta' ) ) : 
-	$slideshow = get_cfc_meta( 'splash_slideshow' ); 
-	$slide_class = 'item active'; 
-	foreach( get_cfc_meta( 'splash_slideshow' ) as $key => $value ) : ?>
-		<div class="<?php echo $slide_class; ?>">
-		 <div style="background:url(<?php the_cfc_field( 'splash_slideshow','background-image', false, $key ); ?>) center center; 
-          background-size:cover;" class="slider-size">
-		  <div class="container">
-		  <div class="intro-message">
-		<?php $slide_title = the_cfc_field('splash_slideshow', 'title', false, $key , false); ?>
-		<?php $slide_subtitle = the_cfc_field('splash_slideshow', 'subtitle', false, $key , false); ?>
-		<?php $slide_button = the_cfc_field('splash_slideshow', 'button', false, $key , false); ?>
-		<?php $slide_slug = '/' . the_cfc_field('splash_slideshow', 'slug', false, $key , false ); ?>
-		<?php if (!empty($slide_title)) : ?>
-			<div class="carousel-title"><a href="<?php echo $slide_slug ?>"><?php echo $slide_title; ?></a></div>
-		<?php endif; ?>
-		<?php if (!empty($slide_subtitle)) : ?>
-			<div class="carousel-subtitle"><a href="<?php echo $slide_slug ?>"><?php echo $slide_subtitle; ?></a></div>
-		<?php endif; ?>
-		<?php if (!empty($slide_button)) : ?>
-			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a></div>
-		<?php endif; ?>
+<section class="splash" >
+<?php
+if ( function_exists( 'get_cfc_meta' ) ) : 
+?>
+	<div class="splash-screen" style="background:url(<?php the_cfc_field( 'splash-meta',	
+		'background-image' ); ?>) center center; 
+          background-size:cover;" >
+		<div class="container">
+			<div class="intro-message">
+				<div class="splash-title"><?php the_cfc_field('splash-meta', 'title' ); ?></div>
+				<div class="splash-subtitle"><?php the_cfc_field('splash-meta', 'subtitle' ); ?></div>
+			</div>
 		</div>
+	</div>
+<?php 
+endif;
+?>
+</section>
+<section class="splash-teaser" >
+<?php 
+if ( function_exists( 'get_cfc_meta' ) ) : 
+$splash_teaser_ids = array();
+foreach( get_cfc_meta( 'splash-teaser' ) as $key => $value ){ 
+	$splash_teaser_ids[] = get_cfc_field( 'splash-teaser','page-number', false, $key );
+}
+$max_items = 6;
+$this_item = 1;
+?>
+<div class="container">
+<div class="row">
+<?php 
+	foreach ($splash_teaser_ids as $this_teaser_id) : 
+	
+		$this_teaser_post = get_post($this_teaser_id); 
+		
+		//glyph
+		$this_teaser_glyph = get_cfc_field('page-meta', 'glyph' , 	$this_teaser_id);
+		if ( !empty( $this_teaser_glyph ) ) { $this_teaser_glyph = "<span class='glyphicon " . $this_teaser_glyph . "' aria-hidden='true'></span>"; }
+		
+		//blurb
+		$this_teaser_blurb = get_cfc_field('page-meta', 'blurb' , 	$this_teaser_id) ;
+		if ( empty( $this_teaser_blurb ) ) { $this_teaser_blurb = wp_trim_words( $this_teaser_post->post_content , 10 );}
+?>
+	<div class="col-md-2 col-xs-4">
+		<div class="panel panel-splash-teaser panel-splash-teaser-<?php echo $this_item; ?>">
+			<div class="panel-heading"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_glyph; ?></a>
+			<?php //echo get_the_post_thumbnail( $this_teaser_id , 'thumbnail' , array('class' => " img-responsive alignright") ); ?>
+		  </div>
+			<div class="panel-body">
+		  <div class="entry-summary">
+			<h4 class="entry-title"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_post->post_title; ?></a></h4>
+			<div class="hidden-sm hidden-xs"><?php echo $this_teaser_blurb; ?></div>
+		  </div>
+		  </div>
 		</div>
-		</div>
-		</div>
-		<?php $slide_class = 'item'; ?>
-	<?php endforeach; ?>
-<?php endif; ?>
-</div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#splash-carousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#splash-carousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<?php // Show each item on xs screens ?>
-<div id="splash-carousel" class="notcarousel visible-xs-block">
-<div class="carousel-inner" role="listbox">
-<?php if ( function_exists( 'get_cfc_meta' ) ) : 
-	$slideshow = get_cfc_meta( 'splash_slideshow' ); 
-	foreach( get_cfc_meta( 'splash_slideshow' ) as $key => $value ) : ?>
-		 <div style="background:url(<?php the_cfc_field( 'splash_slideshow','background-image', false, $key ); ?>) center center; 
-          background-size:cover;" class="slider-size">
-		  <div class="container">
-		  <div class="intro-message">
-		<?php $slide_title = the_cfc_field('splash_slideshow', 'title', false, $key , false); ?>
-		<?php $slide_subtitle = the_cfc_field('splash_slideshow', 'subtitle', false, $key , false); ?>
-		<?php $slide_button = the_cfc_field('splash_slideshow', 'button', false, $key , false); ?>
-		<?php $slide_slug = '/' . the_cfc_field('splash_slideshow', 'slug', false, $key , false ); ?>
-		<?php if (!empty($slide_title)) : ?>
-			<div class="carousel-title"><a href="<?php echo $slide_slug ?>"><?php echo $slide_title; ?></a></div>
-		<?php endif; ?>
-		<?php if (!empty($slide_subtitle)) : ?>
-			<div class="carousel-subtitle"><a href="<?php echo $slide_slug ?>"><?php echo $slide_subtitle; ?></a></div>
-		<?php endif; ?>
-		<?php if (!empty($slide_button)) : ?>
-			<div class="carousel-button"><a href="<?php echo $slide_slug ?>"><?php echo $slide_button; ?> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></a></div>
-		<?php endif; ?>
-		</div>
-		</div>
-		</div>
-	<?php endforeach; ?>
-<?php endif; ?>
+	</div>
+<?php 
+		$this_item++;
+		if ($this_item>$max_items) {break;}
+	endforeach; 
+endif; 
+?>
 </div>
 </div>
 </section>

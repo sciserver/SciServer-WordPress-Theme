@@ -133,77 +133,117 @@ footer.pagefooter {
 /* ================================================
    FrontPage
    ================================================ */
-	body.home {
-		section.splash-slides {
-			.carousel, .notcarousel {	
-				height: 					auto; 			/* This is the full carousel height */
-				overflow:					hidden;
-				width:						100%;
-				margin:						0 auto; 			/* center your carousel if other than 100% */ 
+body.home {
+	section.splash {
+		.splash-screen {	
+			height: 					250px;
+			overflow:					hidden;
+			width:						100%;
+			margin-top:					0;
+			margin-right:				auto; 			
+			margin-left:				auto; 			
+			margin-bottom: 				10px; 
+		}
+		.intro-message {
+			padding-top: 				30px;
+			max-width:					90%;
+			margin: 					0 auto;
+			.splash-title, .splash-subtitle {
+				font-family:			@headings-font-family;
+				background: 			rgba(0, 0, 0, 0.7);
+				padding: 				10px;
+				text-shadow: 			2px 2px 3px rgba(0,0,0,.9);
+				color: 					@white;
+				margin:					0;
+				.text-center;
+				a, a:hover, a:focus {
+					text-decoration: none;
+					color:@white;
+				}
 			}
-			.carousel-control.left, .carousel-control.right, 
-			.carousel-control.left:hover, .carousel-control.right:hover, 
-			.carousel-control.left:focus, .carousel-control.right:focus {
-				background-image:			none;
+			.splash-title {
+				line-height: 			1.1;
+				margin-top: 			22px;
+				margin-bottom: 			11px;
+				color: 					#fff;
+				margin: 				0 0 10px 0;
+				font-size: 				80px;
+				font-weight: 			700;
+				letter-spacing: 		1px;
 			}
-			.carousel-control {
-				& .glyphicon-chevron-left {
-					margin-left: 				-50%;
-				}
-				& .glyphicon-chevron-right {
-					margin-right:				-50%;
-				}
-			}
-			.slider-size {
-				height: 					450px; /* This is the slider div height */
-				margin-bottom: 				30px; /* Space between the slide and next slider or footer. */
-			}
-			.intro-message {
-				padding-top: 				10%;
-				max-width:					90%;
-				margin: 					0 auto;
-				.carousel-title, .carousel-subtitle, .carousel-button  {
-					font-family:			@headings-font-family;
-					background: 			rgba(0, 0, 0, 0.7);
-					padding: 				10px;
-					text-shadow: 			2px 2px 3px rgba(0,0,0,.9);
-					color: 					@white;
-					margin:					0;
-					.text-center;
-					a, a:hover, a:focus {
-						text-decoration: none;
-						color:@white;
-					}
-				}
-				.carousel-title {
-					line-height: 			1.1;
-					margin-top: 			22px;
-					margin-bottom: 			11px;
-					color: 					#fff;
-					margin: 				0 0 10px 0;
-					font-size: 				80px;
-					font-weight: 			700;
-					letter-spacing: 		1px;
-				}
-				.carousel-subtitle {
-					margin: 				0 0 10px;
-					font-size: 				18px;
-				}
-				.carousel-button {
-					font-size: 				18px;
-					position: 				relative;
-					display: 				inline-block;
-					padding: 				5px;
-					margin-top:				10px;
-					float:					right;
-					text-align: 			right;
-					font-style: 			oblique;
-					background: 			rgba(0,0,0,.7);
-					border-left: 			5px solid @brand-danger;			
-				}
+			.splash-subtitle {
+				margin: 				0 0 10px;
+				font-size: 				18px;
 			}
 		}
 	}
+	section.splash-teaser {
+		div.panel-splash-teaser {
+			.panel-default;
+			.panel-heading {
+				text-align: center;
+				font-size: -webkit-xxx-large;
+				color: @brand-primary;
+				span.glyphicon {
+				}
+			}
+			.panel-body {
+				.entry-title {text-align: -webkit-center;}
+				color: @gray-dark;
+			}
+		}
+		div.panel-splash-teaser-1 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, -30);
+				&:hover {
+					color: darken(spin(@brand-primary, -30),10%);
+				}
+			}
+		}
+		div.panel-splash-teaser-2 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, 0);
+				&:hover {
+					color: darken(spin(@brand-primary, 0),10%);
+				}
+			}
+		}
+		div.panel-splash-teaser-3 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, 30);
+				&:hover {
+					color: darken(spin(@brand-primary, 30),10%);
+				}
+			}
+		}
+		div.panel-splash-teaser-4 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, -150);
+				&:hover {
+					color: darken(spin(@brand-primary, -150),10%);
+				}
+			}
+		}
+		div.panel-splash-teaser-5 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, 180);
+				&:hover {
+					color: darken(spin(@brand-primary, 180),10%);
+				}
+			}
+		}
+		div.panel-splash-teaser-6 {
+			.panel-heading>a { 
+				color: spin(@brand-primary, 150);
+				&:hover {
+					color: darken(spin(@brand-primary, 150),10%);
+				}
+			}
+		}
+/*
+*/
+	}
+}
 
 /* ================================================
    Search Results
@@ -365,14 +405,11 @@ body.page.page-template-core-archive .well {
 // <=XS
 @media (max-width: @screen-xs-max) {
 	body.home {
-		section.splash-slides {
+		section.splash {
 			.intro-message {
-				.carouslide-title {
-					font-size: 40px;
+				.splash-title {
+					font-size: 60px;
 				}
-			}
-			.slider-size {
-				height: 350px; 
 			}
 		}
 	}
@@ -393,5 +430,12 @@ body.page.page-template-core-archive .well {
 
 // <=MD
 @media (max-width: @screen-md-max) {
+	body.home {
+		section.splash {
+			.splash-screen {	
+				height: 300px;
+			}
+		}
+	}
 }
 
