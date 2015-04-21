@@ -1074,19 +1074,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 41px;
+  font-size: 32px;
 }
 h2,
 .h2 {
-  font-size: 34px;
+  font-size: 27px;
 }
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h4,
 .h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 h5,
 .h5 {
@@ -8799,7 +8799,7 @@ header div.logo .blogname {
   color: #666666;
   margin-top: 11px;
   margin-bottom: 11px;
-  font-size: 20px;
+  font-size: 18px;
 }
 header div.logo .blogname small,
 header div.logo .blogname .small {
@@ -9299,6 +9299,7 @@ body.home section.splash-teaser div.panel-splash-teaser > .panel-footer + .panel
 body.home section.splash-teaser div.panel-splash-teaser .panel-heading {
   text-align: center;
   font-size: -webkit-xxx-large;
+  font-size: 48px;
   color: #004e99;
 }
 body.home section.splash-teaser div.panel-splash-teaser .panel-body {
@@ -9422,27 +9423,58 @@ body.page aside.sidebar .widget_nav_menu ul > li + li {
   margin-top: 2px;
   margin-left: 0;
 }
+body.page aside.sidebar .widget_nav_menu ul li.menu-overview a {
+  text-decoration: underline;
+  color: #333333;
+}
 body.page aside.sidebar .widget_nav_menu ul li > a {
   background-color: transparent;
   color: #003466;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2em;
 }
 body.page aside.sidebar .widget_nav_menu ul li > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000d19;
-  font-weight: 550;
+  font-weight: 600;
 }
 body.page aside.sidebar .widget_nav_menu ul li.active > a {
   background-color: transparent;
   color: #000d19;
+  font-weight: 600;
 }
 body.page aside.sidebar .widget_nav_menu ul li.active > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000000;
-  font-weight: 550;
+  font-weight: 600;
+}
+body.page aside.sidebar .widget_nav_menu ul li > ul > li > a {
+  background-color: transparent;
+  color: #000d19;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+body.page aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000d19;
+  font-weight: 600;
+}
+body.page aside.sidebar .widget_nav_menu ul li > ul > li.active > a {
+  background-color: transparent;
+  color: #000000;
+  font-weight: 600;
+}
+body.page aside.sidebar .widget_nav_menu ul li > ul > li.active > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: 600;
 }
 /* ================================================
    DropDown 
