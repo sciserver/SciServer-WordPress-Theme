@@ -44,7 +44,7 @@ $this_item = 1;
 		$this_teaser_blurb = get_cfc_field('page-meta', 'blurb' , 	$this_teaser_id) ;
 		if ( empty( $this_teaser_blurb ) ) { $this_teaser_blurb = wp_trim_words( $this_teaser_post->post_content , 10 );}
 ?>
-	<div class="col-md-2 col-xs-4">
+	<div class="col-md-2 col-sm-4 col-xs-6">
 		<div class="panel panel-splash-teaser panel-splash-teaser-<?php echo $this_item; ?>">
 			<div class="panel-heading"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_glyph; ?></a>
 			<?php //echo get_the_post_thumbnail( $this_teaser_id , 'thumbnail' , array('class' => " img-responsive alignright") ); ?>

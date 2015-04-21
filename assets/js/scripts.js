@@ -2290,7 +2290,13 @@
   })
 
 }(jQuery);
-;;/* ========================================================================
+;$('.carousel-caption a').on('click',function(e){
+	this_id = $(this).context.attributes.href.textContent;
+	if($(this_id).hasClass('in')){
+        e.stopPropagation();
+		e.preventDefault();
+	}
+});;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *

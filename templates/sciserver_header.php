@@ -11,6 +11,9 @@
 			</div>
 		</div>
 	</div><!--end of logo -->
+
+	<?php if (!is_front_page()) :   ?>
+
 	<div class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="row">
@@ -34,4 +37,5 @@
 			</div>
 		</div>
 	</div>
+	<?php endif; ?>
 </header>

@@ -8,7 +8,7 @@ $core_archives = get_pages( array( 'parent' => get_the_ID(),
 										'post_status' => 'publish',
 										'sort_column' => 'menu_order') ) ; 
 $num_col_xs = 1;
-$num_col_md = 3;
+$num_col_md = 2;
 $this_col_class = 'col-md-' . intval(12 / $num_col_md) . ' col-xs-' . intval(12 / $num_col_xs);
 $this_col = 0;
 ?>

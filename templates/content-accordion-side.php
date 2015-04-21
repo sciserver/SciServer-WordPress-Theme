@@ -26,3 +26,9 @@ $cfc_thumb = (!empty($cfc_thumb) ) ? "<img src=" . $cfc_thumb . " class='img-res
 <?php 	endforeach; ?>
 <?php endif; ?>
 </div>
+
+<?php $current_page = get_post(); ?>
+<?php if (locate_template('templates/content-' . $current_page -> post_name . '.php') != '') : ?>
+<?php 		get_template_part('templates/content', $current_page -> post_name); ?>
+<?php endif; ?>
+

@@ -14,6 +14,7 @@ $roots_includes = array(
   'lib/website_select.php',  // Sets Class to control website options (IDIES, SDSS, SciServer, Etc)
   'lib/init.php',            // Initial theme setup and constants
   'lib/idies_init.php',		 // IDIES initialization tasks //
+  'lib/sciserver_init.php',	 // IDIES initialization tasks //
   'lib/wrapper.php',         // Theme wrapper class
   'lib/sidebar.php',         // Sidebar class
   'lib/config.php',          // Configuration

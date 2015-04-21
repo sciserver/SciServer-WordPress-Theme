@@ -21,10 +21,16 @@ body.page h3 span.glyphicon {
    Typography
    ================================================ */
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
 
 @headings-font-family:    "QuarkBold", Helvetica, Arial, sans-serif;
+@font-size-h1:            floor((@font-size-base * 2.0)); // ~36px
+@font-size-h2:            floor((@font-size-base * 1.7)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.5)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.1)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 /* ================================================
    Header
@@ -32,6 +38,9 @@ body.page h3 span.glyphicon {
 @header-logo-height: 		86px;
 
 header {
+	&.banner.navbar.navbar-default.navbar-static-top {
+		border-width:					0;
+	}
 	div.logo { 
 		padding:				10px 0 14px 0;
 		background-color:		@brand-primary-dark;
@@ -83,7 +92,7 @@ footer.pagefooter {
 	-webkit-box-shadow: 					0 -4px 0 rgba(180, 180, 184, 0.85);
 	box-shadow:					 			0 -4px 0 rgba(180, 180, 184, 0.85);
 	margin-top:								20px;
-	p {
+	p {	
 		text-align:							center;
 	}	
 	a {
@@ -136,7 +145,7 @@ footer.pagefooter {
 body.home {
 	section.splash {
 		.splash-screen {	
-			height: 					250px;
+			height: 					300px;
 			overflow:					hidden;
 			width:						100%;
 			margin-top:					0;
@@ -183,8 +192,9 @@ body.home {
 			.panel-heading {
 				text-align: center;
 				font-size: -webkit-xxx-large;
+				font-size: 48px;
 				color: @brand-primary;
-				span.glyphicon {
+				span.glyphicon {	
 				}
 			}
 			.panel-body {
@@ -246,8 +256,13 @@ body.home {
 }
 
 /* ================================================
-   Search Results
+   Body
    ================================================ */
+body {
+	>div.wrap.container, >div.wrap.container-fluid {
+		min-height:700px;
+	}
+}
 
 /* ================================================
    Archive
@@ -260,25 +275,54 @@ body.page aside.sidebar .widget_nav_menu ul {
 	.nav;
 	.nav-pills;
 	.nav-stacked;
+	li.menu-overview a {
+		text-decoration:		underline;
+		color:					@gray-dark;
+	}
 	li>a {
 		background-color:		transparent;
 		color:					@brand-primary-dark;
-		font-weight:			400;
+		font-weight:			500;
 		font-size:				1.2em;
 	}
 	li>a:hover, li.active>a:focus {
 		background-color:		rgba(0,0,0,0.1);
 		color:					@brand-primary-darker;
-		font-weight:			550;
+		font-weight:			600;
 	}
 	li.active>a {
 		background-color:		transparent;
 		color:					@brand-primary-darker;
+		font-weight:			600;
 	}
 	li.active>a:hover, li.active>a:focus {
 		background-color:		rgba(0,0,0,0.1);
 		color:					@brand-primary-darkest;
-		font-weight:			550;
+		font-weight:			600;
+	}
+	li>ul>li>a {
+		background-color:		transparent;
+		color:					@brand-primary-darker;
+		font-weight:			500;
+		font-size:				1.1em;
+		padding-left: 40px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	li>ul>li>a:hover, li.active>a:focus {
+		background-color:		rgba(0,0,0,0.1);
+		color:					@brand-primary-darker;
+		font-weight:			600;
+	}
+	li>ul>li.active>a {
+		background-color:		transparent;
+		color:					@brand-primary-darkest;
+		font-weight:			600;
+	}
+	li>ul>li.active>a:hover, li.active>a:focus {
+		background-color:		rgba(0,0,0,0.1);
+		color:					black;
+		font-weight:			600;
 	}
 }
 /* ================================================
@@ -299,16 +343,30 @@ section.carouslides {
 			width:				20%;
 	}
 	.carousel-caption {
+		.h5;
 		font-size:				medium;
 		margin-bottom:			0px;
 		color:					#333;
 		position:				initial;
+		text-shadow:			none;
 	}
 	
 	.carousel-control {
-		opacity: 		0.8;
-		&.left, &.right {
+		opacity: 		1.0;
+		top: 75px;
+		bottom: auto;
+		width: auto;
+		color: #fff09d;
+		  &.left, &.right {
 			background-image:none;
+		}
+		&.right {
+			left: auto;
+			right: 30px;
+		}
+		&.left {
+			right: auto;
+			left: 30px;
 		}
 	}
 	.carousel-control .glyphicon-chevron-left,
@@ -337,7 +395,12 @@ section.carouslides {
   }
   .carousel-inner > .item {
 		background: white; 
-	}		
+	}
+	#collapslides>div.panel.panel-default {
+		-webkit-box-shadow: none;
+		box-shadow: 		none;
+		border:				transparent;
+	}
 }
 
 /* ================================================
@@ -433,7 +496,7 @@ body.page.page-template-core-archive .well {
 	body.home {
 		section.splash {
 			.splash-screen {	
-				height: 300px;
+				height: 350px;
 			}
 		}
 	}
