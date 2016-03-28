@@ -21,11 +21,11 @@ body.page h3 span.glyphicon {
    Labels
    ================================================ */
 body.page {
-	.label.label-primary, 
-	.label.label-danger, 
-	.label.label-warning, 
-	.label.label-info, 
-	.label.label-success, {
+	div.label.label-primary, 
+	div.label.label-danger, 
+	div.label.label-warning, 
+	div.label.label-info, 
+	div.label.label-success, {
 		color:					#ffffff;
 		white-space: 			normal;
 		display: 				block;
@@ -34,8 +34,18 @@ body.page {
 		}
 	}
 }
-
-
+span.new {
+	top: -0.5em;
+    position: relative;
+    vertical-align: baseline;
+	box-sizing: border-box;
+	.label;
+	.label-danger;
+	vertical-align: super;
+	&:after {
+		content: "NEW!";
+	}
+}
 
 /* ================================================
    Typography
