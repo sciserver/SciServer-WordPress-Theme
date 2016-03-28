@@ -9050,6 +9050,25 @@ body.page h3 span.glyphicon {
   color: #004e99;
 }
 /* ================================================
+   Labels
+   ================================================ */
+body.page .label.label-primary,
+body.page .label.label-danger,
+body.page .label.label-warning,
+body.page .label.label-info,
+body.page .label.label-success {
+  color: #ffffff;
+  white-space: normal;
+  display: block;
+}
+body.page .label.label-primary a,
+body.page .label.label-danger a,
+body.page .label.label-warning a,
+body.page .label.label-info a,
+body.page .label.label-success a {
+  color: #b4b4b4;
+}
+/* ================================================
    Typography
    ================================================ */
 /* ================================================
