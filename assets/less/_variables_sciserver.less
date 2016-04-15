@@ -175,7 +175,7 @@ footer.pagefooter {
 body.home {
 	section.splash {
 		.splash-screen {	
-			height: 					300px;
+			height: 					250px;
 			overflow:					hidden;
 			width:						100%;
 			margin-top:					0;
@@ -299,17 +299,19 @@ body {
    ================================================ */
 
 /* ================================================
-   NavBar
+   Sidebar Nave Menu, Recent Posts Widget
    ================================================ */
-body.page aside.sidebar .widget_nav_menu ul {
+body.page aside.sidebar .widget_nav_menu ul, 
+body aside.sidebar .widget_recent_entries ul,
+body.home.page .widget.widget_recent_entries ul {
 	.nav;
 	.nav-pills;
 	.nav-stacked;
-	li.menu-overview a {
-		text-decoration:		underline;
-		color:					@gray-dark;
-	}
-	li>a {
+	//li.menu-overview a {
+	//	text-decoration:		underline;
+	//	color:					@gray-dark;
+	//}
+	li>a, li.active-parent>a {
 		background-color:		transparent;
 		color:					@brand-primary-dark;
 		font-weight:			500;
@@ -320,7 +322,7 @@ body.page aside.sidebar .widget_nav_menu ul {
 		color:					@brand-primary-darker;
 		font-weight:			600;
 	}
-	li.active>a {
+	li.active:not(.active-parent)>a {
 		background-color:		transparent;
 		color:					@brand-primary-darker;
 		font-weight:			600;
@@ -330,7 +332,7 @@ body.page aside.sidebar .widget_nav_menu ul {
 		color:					@brand-primary-darkest;
 		font-weight:			600;
 	}
-	li>ul>li>a {
+	li>ul>li>a, li.active-parent>ul>li>a {
 		background-color:		transparent;
 		color:					@brand-primary-darker;
 		font-weight:			500;
@@ -339,21 +341,24 @@ body.page aside.sidebar .widget_nav_menu ul {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
-	li>ul>li>a:hover, li.active>a:focus {
+	li>ul>li>a:hover, li.active-parent>ul>li>a:hover, li.active:not(.active-parent)>a:focus {
 		background-color:		rgba(0,0,0,0.1);
 		color:					@brand-primary-darker;
 		font-weight:			600;
 	}
-	li>ul>li.active>a {
+	li>ul>li.active:not(.active-parent)>a {
 		background-color:		transparent;
 		color:					@brand-primary-darkest;
 		font-weight:			600;
 	}
-	li>ul>li.active>a:hover, li.active>a:focus {
+	li>ul>li.active:not(.active-parent)>a:hover, li.active:not(.active-parent)>a:focus {
 		background-color:		rgba(0,0,0,0.1);
 		color:					black;
 		font-weight:			600;
 	}
+}
+body.home.page .widget.widget_recent_entries ul {
+	font-size:  0.8em;
 }
 /* ================================================
    DropDown 
@@ -526,7 +531,7 @@ body.page.page-template-core-archive .well {
 	body.home {
 		section.splash {
 			.splash-screen {	
-				height: 350px;
+				height: 300px;
 			}
 		}
 	}

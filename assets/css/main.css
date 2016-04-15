@@ -6366,6 +6366,10 @@ footer.pagefooter ul:before,
 footer.pagefooter ul:after,
 body.page aside.sidebar .widget_nav_menu ul:before,
 body.page aside.sidebar .widget_nav_menu ul:after,
+body aside.sidebar .widget_recent_entries ul:before,
+body aside.sidebar .widget_recent_entries ul:after,
+body.home.page .widget.widget_recent_entries ul:before,
+body.home.page .widget.widget_recent_entries ul:after,
 .form-horizontal .comment-form p:before,
 .form-horizontal .comment-form p:after {
   content: " ";
@@ -6388,6 +6392,8 @@ body.page aside.sidebar .widget_nav_menu ul:after,
 .modal-footer:after,
 footer.pagefooter ul:after,
 body.page aside.sidebar .widget_nav_menu ul:after,
+body aside.sidebar .widget_recent_entries ul:after,
+body.home.page .widget.widget_recent_entries ul:after,
 .form-horizontal .comment-form p:after {
   clear: both;
 }
@@ -9286,7 +9292,7 @@ footer.pagefooter ul li a:focus {
    FrontPage
    ================================================ */
 body.home section.splash .splash-screen {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   width: 100%;
   margin-top: 0;
@@ -9413,102 +9419,160 @@ body > div.wrap.container-fluid {
    Archive
    ================================================ */
 /* ================================================
-   NavBar
+   Sidebar Nave Menu, Recent Posts Widget
    ================================================ */
-body.page aside.sidebar .widget_nav_menu ul {
+body.page aside.sidebar .widget_nav_menu ul,
+body aside.sidebar .widget_recent_entries ul,
+body.home.page .widget.widget_recent_entries ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-body.page aside.sidebar .widget_nav_menu ul > li {
+body.page aside.sidebar .widget_nav_menu ul > li,
+body aside.sidebar .widget_recent_entries ul > li,
+body.home.page .widget.widget_recent_entries ul > li {
   position: relative;
   display: block;
 }
-body.page aside.sidebar .widget_nav_menu ul > li > a {
+body.page aside.sidebar .widget_nav_menu ul > li > a,
+body aside.sidebar .widget_recent_entries ul > li > a,
+body.home.page .widget.widget_recent_entries ul > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 body.page aside.sidebar .widget_nav_menu ul > li > a:hover,
-body.page aside.sidebar .widget_nav_menu ul > li > a:focus {
+body aside.sidebar .widget_recent_entries ul > li > a:hover,
+body.home.page .widget.widget_recent_entries ul > li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li > a:focus,
+body aside.sidebar .widget_recent_entries ul > li > a:focus,
+body.home.page .widget.widget_recent_entries ul > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-body.page aside.sidebar .widget_nav_menu ul > li.disabled > a {
+body.page aside.sidebar .widget_nav_menu ul > li.disabled > a,
+body aside.sidebar .widget_recent_entries ul > li.disabled > a,
+body.home.page .widget.widget_recent_entries ul > li.disabled > a {
   color: #777777;
 }
 body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
-body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:focus {
+body aside.sidebar .widget_recent_entries ul > li.disabled > a:hover,
+body.home.page .widget.widget_recent_entries ul > li.disabled > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:focus,
+body aside.sidebar .widget_recent_entries ul > li.disabled > a:focus,
+body.home.page .widget.widget_recent_entries ul > li.disabled > a:focus {
   color: #777777;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 body.page aside.sidebar .widget_nav_menu ul .open > a,
+body aside.sidebar .widget_recent_entries ul .open > a,
+body.home.page .widget.widget_recent_entries ul .open > a,
 body.page aside.sidebar .widget_nav_menu ul .open > a:hover,
-body.page aside.sidebar .widget_nav_menu ul .open > a:focus {
+body aside.sidebar .widget_recent_entries ul .open > a:hover,
+body.home.page .widget.widget_recent_entries ul .open > a:hover,
+body.page aside.sidebar .widget_nav_menu ul .open > a:focus,
+body aside.sidebar .widget_recent_entries ul .open > a:focus,
+body.home.page .widget.widget_recent_entries ul .open > a:focus {
   background-color: #eeeeee;
   border-color: #004e99;
 }
-body.page aside.sidebar .widget_nav_menu ul .nav-divider {
+body.page aside.sidebar .widget_nav_menu ul .nav-divider,
+body aside.sidebar .widget_recent_entries ul .nav-divider,
+body.home.page .widget.widget_recent_entries ul .nav-divider {
   height: 1px;
   margin: 10px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-body.page aside.sidebar .widget_nav_menu ul > li > a > img {
+body.page aside.sidebar .widget_nav_menu ul > li > a > img,
+body aside.sidebar .widget_recent_entries ul > li > a > img,
+body.home.page .widget.widget_recent_entries ul > li > a > img {
   max-width: none;
 }
-body.page aside.sidebar .widget_nav_menu ul > li {
+body.page aside.sidebar .widget_nav_menu ul > li,
+body aside.sidebar .widget_recent_entries ul > li,
+body.home.page .widget.widget_recent_entries ul > li {
   float: left;
 }
-body.page aside.sidebar .widget_nav_menu ul > li > a {
+body.page aside.sidebar .widget_nav_menu ul > li > a,
+body aside.sidebar .widget_recent_entries ul > li > a,
+body.home.page .widget.widget_recent_entries ul > li > a {
   border-radius: 4px;
 }
-body.page aside.sidebar .widget_nav_menu ul > li + li {
+body.page aside.sidebar .widget_nav_menu ul > li + li,
+body aside.sidebar .widget_recent_entries ul > li + li,
+body.home.page .widget.widget_recent_entries ul > li + li {
   margin-left: 2px;
 }
 body.page aside.sidebar .widget_nav_menu ul > li.active > a,
+body aside.sidebar .widget_recent_entries ul > li.active > a,
+body.home.page .widget.widget_recent_entries ul > li.active > a,
 body.page aside.sidebar .widget_nav_menu ul > li.active > a:hover,
-body.page aside.sidebar .widget_nav_menu ul > li.active > a:focus {
+body aside.sidebar .widget_recent_entries ul > li.active > a:hover,
+body.home.page .widget.widget_recent_entries ul > li.active > a:hover,
+body.page aside.sidebar .widget_nav_menu ul > li.active > a:focus,
+body aside.sidebar .widget_recent_entries ul > li.active > a:focus,
+body.home.page .widget.widget_recent_entries ul > li.active > a:focus {
   color: #ffffff;
   background-color: #004e99;
 }
-body.page aside.sidebar .widget_nav_menu ul > li {
+body.page aside.sidebar .widget_nav_menu ul > li,
+body aside.sidebar .widget_recent_entries ul > li,
+body.home.page .widget.widget_recent_entries ul > li {
   float: none;
 }
-body.page aside.sidebar .widget_nav_menu ul > li + li {
+body.page aside.sidebar .widget_nav_menu ul > li + li,
+body aside.sidebar .widget_recent_entries ul > li + li,
+body.home.page .widget.widget_recent_entries ul > li + li {
   margin-top: 2px;
   margin-left: 0;
 }
-body.page aside.sidebar .widget_nav_menu ul li.menu-overview a {
-  text-decoration: underline;
-  color: #333333;
-}
-body.page aside.sidebar .widget_nav_menu ul li > a {
+body.page aside.sidebar .widget_nav_menu ul li > a,
+body aside.sidebar .widget_recent_entries ul li > a,
+body.home.page .widget.widget_recent_entries ul li > a,
+body.page aside.sidebar .widget_nav_menu ul li.active-parent > a,
+body aside.sidebar .widget_recent_entries ul li.active-parent > a,
+body.home.page .widget.widget_recent_entries ul li.active-parent > a {
   background-color: transparent;
   color: #003466;
   font-weight: 500;
   font-size: 1.2em;
 }
 body.page aside.sidebar .widget_nav_menu ul li > a:hover,
-body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+body aside.sidebar .widget_recent_entries ul li > a:hover,
+body.home.page .widget.widget_recent_entries ul li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body aside.sidebar .widget_recent_entries ul li.active > a:focus,
+body.home.page .widget.widget_recent_entries ul li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000d19;
   font-weight: 600;
 }
-body.page aside.sidebar .widget_nav_menu ul li.active > a {
+body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
+body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a,
+body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a {
   background-color: transparent;
   color: #000d19;
   font-weight: 600;
 }
 body.page aside.sidebar .widget_nav_menu ul li.active > a:hover,
-body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+body aside.sidebar .widget_recent_entries ul li.active > a:hover,
+body.home.page .widget.widget_recent_entries ul li.active > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body aside.sidebar .widget_recent_entries ul li.active > a:focus,
+body.home.page .widget.widget_recent_entries ul li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000000;
   font-weight: 600;
 }
-body.page aside.sidebar .widget_nav_menu ul li > ul > li > a {
+body.page aside.sidebar .widget_nav_menu ul li > ul > li > a,
+body aside.sidebar .widget_recent_entries ul li > ul > li > a,
+body.home.page .widget.widget_recent_entries ul li > ul > li > a,
+body.page aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
+body aside.sidebar .widget_recent_entries ul li.active-parent > ul > li > a,
+body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a {
   background-color: transparent;
   color: #000d19;
   font-weight: 500;
@@ -9518,21 +9582,37 @@ body.page aside.sidebar .widget_nav_menu ul li > ul > li > a {
   padding-bottom: 5px;
 }
 body.page aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
-body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+body aside.sidebar .widget_recent_entries ul li > ul > li > a:hover,
+body.home.page .widget.widget_recent_entries ul li > ul > li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a:hover,
+body aside.sidebar .widget_recent_entries ul li.active-parent > ul > li > a:hover,
+body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a:focus,
+body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: #000d19;
   font-weight: 600;
 }
-body.page aside.sidebar .widget_nav_menu ul li > ul > li.active > a {
+body.page aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
+body aside.sidebar .widget_recent_entries ul li > ul > li.active:not(.active-parent) > a,
+body.home.page .widget.widget_recent_entries ul li > ul > li.active:not(.active-parent) > a {
   background-color: transparent;
   color: #000000;
   font-weight: 600;
 }
-body.page aside.sidebar .widget_nav_menu ul li > ul > li.active > a:hover,
-body.page aside.sidebar .widget_nav_menu ul li.active > a:focus {
+body.page aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a:hover,
+body aside.sidebar .widget_recent_entries ul li > ul > li.active:not(.active-parent) > a:hover,
+body.home.page .widget.widget_recent_entries ul li > ul > li.active:not(.active-parent) > a:hover,
+body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a:focus,
+body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   color: black;
   font-weight: 600;
+}
+body.home.page .widget.widget_recent_entries ul {
+  font-size: 0.8em;
 }
 /* ================================================
    DropDown 
@@ -9678,7 +9758,7 @@ body.page.page-template-core-archive .well {
 }
 @media (max-width: 1199px) {
   body.home section.splash .splash-screen {
-    height: 350px;
+    height: 300px;
   }
 }
 .comment-list ol {

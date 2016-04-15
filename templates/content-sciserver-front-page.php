@@ -36,6 +36,10 @@ $this_item = 1;
 	
 		$this_teaser_post = get_post($this_teaser_id); 
 		
+		//title
+		$this_teaser_title = get_cfc_field('page-meta', 'display-name' , 	$this_teaser_id);
+		if ( empty( $this_teaser_title ) ) $this_teaser_title = $this_teaser_post->post_title; 
+		
 		//glyph
 		$this_teaser_glyph = get_cfc_field('page-meta', 'glyph' , 	$this_teaser_id);
 		if ( !empty( $this_teaser_glyph ) ) { $this_teaser_glyph = "<span class='glyphicon " . $this_teaser_glyph . "' aria-hidden='true'></span>"; }
@@ -47,12 +51,19 @@ $this_item = 1;
 	<div class="col-md-2 col-sm-4 col-xs-6">
 		<div class="panel panel-splash-teaser panel-splash-teaser-<?php echo $this_item; ?>">
 			<div class="panel-heading"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_glyph; ?></a>
-			<?php //echo get_the_post_thumbnail( $this_teaser_id , 'thumbnail' , array('class' => " img-responsive alignright") ); ?>
 		  </div>
 			<div class="panel-body">
 		  <div class="entry-summary">
-			<h4 class="entry-title"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_post->post_title; ?></a></h4>
-			<div class="hidden-sm hidden-xs"><?php echo $this_teaser_blurb; ?></div>
+			<h4 class="entry-title"><a href="<?php echo get_page_link( $this_teaser_id ); ?>"><?php echo $this_teaser_title; ?></a></h4>
+			<?php 
+			?>
+			<div class="hidden-sm hidden-xs"><?php 
+			if ( $this_teaser_id == get_option('page_for_posts') ) {
+				dynamic_sidebar('sidebar-primary');
+			} else {
+				echo $this_teaser_blurb;
+			}
+			?></div>
 		  </div>
 		  </div>
 		</div>
@@ -61,20 +72,11 @@ $this_item = 1;
 		$this_item++;
 		if ($this_item>$max_items) {break;}
 	endforeach; 
+?>
+</div>
+<?php
 endif; 
 ?>
-</div>
-</div>
-</section>
-<section class="splash-intro" >
-<div class="container">
-<div class="row">
-<div class="col-xs-12">
-<?php
-the_post(); 
-the_content(); 
-?>
-</div>
 </div>
 </div>
 </section>

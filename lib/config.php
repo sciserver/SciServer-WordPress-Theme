@@ -61,6 +61,7 @@ function roots_display_sidebar() {
 	    'front-page.php',
         'no-sidebar.php',
         'core-archive.php',
+        'overview-archive.php',
         'carousel-accordion.php',
 
       )
