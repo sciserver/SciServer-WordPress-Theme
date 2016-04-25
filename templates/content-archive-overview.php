@@ -18,7 +18,7 @@ $this_col = 0;
 ?>
 <div class="row">
 <?php foreach ($core_archives as $this_core_page) : 
-	$cfc_glyph = function_exists( 'get_cfc_meta' ) ? "<span class='glyphicon ".get_cfc_field('page-meta', 'glyph' , $this_core_page->ID)." aria-hidden='true'></span>" : '' ;
+	$cfc_glyph = function_exists( 'get_cfc_meta' ) ? "<span class='glyphicon ".get_cfc_field('page-meta', 'glyph' , $this_core_page->ID)."' aria-hidden='true'></span>" : '' ;
 	$this_blurb = get_cfc_field('page-meta', 'blurb' , 	$this_core_page->ID);
 	if ( empty($this_blurb) ) $this_blurb = wp_trim_words( $this_core_page->post_content ,16 );
 	if ( ( ++$this_col % $num_col_md ) == 1 ) echo '<div class="col-xs-12">';
