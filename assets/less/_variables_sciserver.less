@@ -319,7 +319,7 @@ body.notebook-5-walkthrough,
    ================================================ */
 
 /* ================================================
-   Sidebar Nave Menu, Recent Posts Widget
+   Sidebar Nav Menu, Recent Posts Widget
    ================================================ */
 body.single.single-post aside.sidebar .widget_nav_menu ul, 
 body.page aside.sidebar .widget_nav_menu ul, 
@@ -381,6 +381,22 @@ body.home.page .widget.widget_recent_entries ul {
 body.home.page .widget.widget_recent_entries ul {
 	font-size:  0.8em;
 }
+/* ================================================
+   In-page nested nav.nav-pills.nav-stacked indentation 
+   ================================================ */
+body.page ul.nav-pills.nav-stacked>li>ul.nav.nav-pills.nav-stacked {
+	margin-left: 15px;
+	&>li>a {
+		padding: 5px 10px 5px 10px;
+	}
+	&>li>ul.nav.nav-pills.nav-stacked {
+		margin-left: 30px;
+		&>li>a {
+			padding: 5px 10px 5px 10px;
+		}
+	}
+}
+
 /* ================================================
    DropDown 
    ================================================ */

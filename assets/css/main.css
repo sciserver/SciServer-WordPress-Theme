@@ -9445,7 +9445,7 @@ body.notebook-5-walkthrough .embed-responsive.embed-responsive-4by3 {
    Archive
    ================================================ */
 /* ================================================
-   Sidebar Nave Menu, Recent Posts Widget
+   Sidebar Nav Menu, Recent Posts Widget
    ================================================ */
 body.single.single-post aside.sidebar .widget_nav_menu ul,
 body.page aside.sidebar .widget_nav_menu ul,
@@ -9675,6 +9675,21 @@ body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > 
 }
 body.home.page .widget.widget_recent_entries ul {
   font-size: 0.8em;
+}
+/* ================================================
+   In-page nested nav.nav-pills.nav-stacked indentation 
+   ================================================ */
+body.page ul.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked {
+  margin-left: 15px;
+}
+body.page ul.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked > li > a {
+  padding: 5px 10px 5px 10px;
+}
+body.page ul.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked {
+  margin-left: 30px;
+}
+body.page ul.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked > li > a {
+  padding: 5px 10px 5px 10px;
 }
 /* ================================================
    DropDown 

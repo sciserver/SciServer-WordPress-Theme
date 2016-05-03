@@ -11,6 +11,7 @@ $num_col_xs = 1;
 $num_col_md = 2;
 $this_col_class = 'col-md-' . intval(12 / $num_col_md) . ' col-xs-' . intval(12 / $num_col_xs);
 $this_col = 0;
+echo "<!-- num_archives" . ceil(count($core_archives)/2) . "-->";
 ?>
 <div class="row">
 <?php foreach ($core_archives as $this_core_page) : 
