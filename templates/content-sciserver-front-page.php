@@ -19,6 +19,11 @@ if ( function_exists( 'get_cfc_meta' ) ) :
 endif;
 ?>
 </section>
+<section class="splash-banner" >
+<?php while (have_posts()) : the_post(); ?>
+  <?php the_content(); ?>
+<?php endwhile; ?>
+</section>
 <section class="splash-teaser" >
 <?php 
 if ( function_exists( 'get_cfc_meta' ) ) : 
