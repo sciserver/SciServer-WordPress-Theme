@@ -46,6 +46,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php
 	//get_template_part('templates/footer'); 
 	get_template_part('templates/'.$IDIES_Web->footer_file); 
+	get_template_part('templates/sciserver_login');
 ?>
 
   <?php wp_footer(); ?>
