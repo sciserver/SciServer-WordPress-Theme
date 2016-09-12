@@ -20,9 +20,18 @@ endif;
 ?>
 </section>
 <section class="splash-banner" >
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
 <?php while (have_posts()) : the_post(); ?>
   <?php the_content(); ?>
 <?php endwhile; ?>
+</div>
+<div class="col-sm-3">
+<a href="//portal.sciserver.org" class="btn btn-success" target="_blank" >Login to SciServer</a>
+</div>
+</div>
+</div>
 </section>
 <section class="splash-teaser" >
 <?php 
