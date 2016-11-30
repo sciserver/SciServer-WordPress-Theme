@@ -26,6 +26,7 @@ $roots_includes = array(
   'lib/scripts.php',         // Scripts and stylesheets
   'lib/extras.php',          // Custom functions
   'lib/sciserver-shortcodes.php',   // Custom shortcodes
+  'lib/sciserver-messages.php',   // Messages to appear on SciServer components
 );
 
 foreach ($roots_includes as $file) {

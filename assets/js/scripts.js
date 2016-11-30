@@ -2296,7 +2296,19 @@
         e.stopPropagation();
 		e.preventDefault();
 	}
-});;/* ========================================================================
+});;+function ($) {
+	$(document).ready(function(){
+
+		//ensure all links with an external-link class open a new tab
+		var $ext_links = $("li.external-link>a");
+		$.merge($ext_links , $("a.external-link"));
+	   $($ext_links).each(function(){
+			$(this).attr("target","_blank")
+		});
+		
+	})
+}(jQuery);
+;;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *
