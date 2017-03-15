@@ -19,10 +19,12 @@ if ( function_exists( 'get_cfc_meta' ) ) :
 endif;
 ?>
 </section>
+<?php $scis_options = get_option( "general-options" , array() );?>
 <section class="splash-banner" >
 <div class="container">
 <div class="row">
 <div class="col-sm-9">
+<h2><a href="/support/updates/">SciServer <em><?php echo $scis_options[0]['release-name']; ?></em> <?php echo $scis_options[0]['system-version']; ?></a></h2>
 <?php while (have_posts()) : the_post(); ?>
   <?php the_content(); ?>
 <?php endwhile; ?>
