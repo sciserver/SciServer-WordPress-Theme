@@ -47,7 +47,7 @@ echo "<div class='row'>";
 echo "<div class='col-xs-12 col-md-6'>";
 echo $lcol;
 echo "</div>";
-echo "<div class='col-xs-2 col-md-6'>";
+echo "<div class='col-xs-12 col-md-6'>";
 echo $rcol;
 echo "</div>";
 echo "</div>";

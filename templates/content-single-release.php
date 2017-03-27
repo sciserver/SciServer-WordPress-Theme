@@ -36,7 +36,7 @@
 	  <?php $the_parent = wp_get_post_parent_id( get_the_id() ); ?>
 	  <ul class="breadcrumb">
 		<li><a href="<?php echo home_url(); ?>">SciServer</a></li>
-		<li><a href="/support/updates/">All Releases</a></li>
+		<li><a href="/release/">All Releases</a></li>
 		<li><?php the_title(); ?></li>
 	</ul> 
     </footer>

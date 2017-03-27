@@ -25,8 +25,9 @@ $roots_includes = array(
   'lib/gallery.php',         // Custom [gallery] modifications
   'lib/scripts.php',         // Scripts and stylesheets
   'lib/extras.php',          // Custom functions
-  'lib/sciserver-shortcodes.php',   // Custom shortcodes
-  'lib/sciserver-messages.php',   // Messages to appear on SciServer components
+  'lib/sciserver-shortcodes.php',   	// Custom shortcodes
+  'lib/sciserver-messages.php',   		// Messages to appear on SciServer components
+  'lib/widget-recent-releases.php',		// Widget to Show Recent Release CPT 
 );
 
 foreach ($roots_includes as $file) {

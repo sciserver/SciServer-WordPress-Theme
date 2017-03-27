@@ -6366,6 +6366,10 @@ footer.pagefooter ul:before,
 footer.pagefooter ul:after,
 body.single.single-post aside.sidebar .widget_nav_menu ul:before,
 body.single.single-post aside.sidebar .widget_nav_menu ul:after,
+body.single.single-release aside.sidebar .widget_nav_menu ul:before,
+body.single.single-release aside.sidebar .widget_nav_menu ul:after,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul:before,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul:after,
 body.page aside.sidebar .widget_nav_menu ul:before,
 body.page aside.sidebar .widget_nav_menu ul:after,
 body aside.sidebar .widget_recent_entries ul:before,
@@ -6394,6 +6398,8 @@ body.home.page .widget.widget_recent_entries ul:after,
 .modal-footer:after,
 footer.pagefooter ul:after,
 body.single.single-post aside.sidebar .widget_nav_menu ul:after,
+body.single.single-release aside.sidebar .widget_nav_menu ul:after,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul:after,
 body.page aside.sidebar .widget_nav_menu ul:after,
 body aside.sidebar .widget_recent_entries ul:after,
 body.home.page .widget.widget_recent_entries ul:after,
@@ -9486,6 +9492,8 @@ body.notebook-5-walkthrough .embed-responsive.embed-responsive-4by3 {
    Sidebar Nav Menu, Recent Posts Widget
    ================================================ */
 body.single.single-post aside.sidebar .widget_nav_menu ul,
+body.single.single-release aside.sidebar .widget_nav_menu ul,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul,
 body.page aside.sidebar .widget_nav_menu ul,
 body aside.sidebar .widget_recent_entries ul,
 body.home.page .widget.widget_recent_entries ul {
@@ -9494,6 +9502,8 @@ body.home.page .widget.widget_recent_entries ul {
   list-style: none;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li,
 body.page aside.sidebar .widget_nav_menu ul > li,
 body aside.sidebar .widget_recent_entries ul > li,
 body.home.page .widget.widget_recent_entries ul > li {
@@ -9501,6 +9511,8 @@ body.home.page .widget.widget_recent_entries ul > li {
   display: block;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li > a,
 body.page aside.sidebar .widget_nav_menu ul > li > a,
 body aside.sidebar .widget_recent_entries ul > li > a,
 body.home.page .widget.widget_recent_entries ul > li > a {
@@ -9509,10 +9521,14 @@ body.home.page .widget.widget_recent_entries ul > li > a {
   padding: 10px 15px;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li > a:hover,
 body.page aside.sidebar .widget_nav_menu ul > li > a:hover,
 body aside.sidebar .widget_recent_entries ul > li > a:hover,
 body.home.page .widget.widget_recent_entries ul > li > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul > li > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li > a:focus,
 body.page aside.sidebar .widget_nav_menu ul > li > a:focus,
 body aside.sidebar .widget_recent_entries ul > li > a:focus,
 body.home.page .widget.widget_recent_entries ul > li > a:focus {
@@ -9520,16 +9536,22 @@ body.home.page .widget.widget_recent_entries ul > li > a:focus {
   background-color: #eeeeee;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.disabled > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.disabled > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.disabled > a,
 body.page aside.sidebar .widget_nav_menu ul > li.disabled > a,
 body aside.sidebar .widget_recent_entries ul > li.disabled > a,
 body.home.page .widget.widget_recent_entries ul > li.disabled > a {
   color: #777777;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
 body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:hover,
 body aside.sidebar .widget_recent_entries ul > li.disabled > a:hover,
 body.home.page .widget.widget_recent_entries ul > li.disabled > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.disabled > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.disabled > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.disabled > a:focus,
 body.page aside.sidebar .widget_nav_menu ul > li.disabled > a:focus,
 body aside.sidebar .widget_recent_entries ul > li.disabled > a:focus,
 body.home.page .widget.widget_recent_entries ul > li.disabled > a:focus {
@@ -9539,14 +9561,20 @@ body.home.page .widget.widget_recent_entries ul > li.disabled > a:focus {
   cursor: not-allowed;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul .open > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul .open > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul .open > a,
 body.page aside.sidebar .widget_nav_menu ul .open > a,
 body aside.sidebar .widget_recent_entries ul .open > a,
 body.home.page .widget.widget_recent_entries ul .open > a,
 body.single.single-post aside.sidebar .widget_nav_menu ul .open > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul .open > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul .open > a:hover,
 body.page aside.sidebar .widget_nav_menu ul .open > a:hover,
 body aside.sidebar .widget_recent_entries ul .open > a:hover,
 body.home.page .widget.widget_recent_entries ul .open > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul .open > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul .open > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul .open > a:focus,
 body.page aside.sidebar .widget_nav_menu ul .open > a:focus,
 body aside.sidebar .widget_recent_entries ul .open > a:focus,
 body.home.page .widget.widget_recent_entries ul .open > a:focus {
@@ -9554,6 +9582,8 @@ body.home.page .widget.widget_recent_entries ul .open > a:focus {
   border-color: #004e99;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul .nav-divider,
+body.single.single-release aside.sidebar .widget_nav_menu ul .nav-divider,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul .nav-divider,
 body.page aside.sidebar .widget_nav_menu ul .nav-divider,
 body aside.sidebar .widget_recent_entries ul .nav-divider,
 body.home.page .widget.widget_recent_entries ul .nav-divider {
@@ -9563,38 +9593,52 @@ body.home.page .widget.widget_recent_entries ul .nav-divider {
   background-color: #e5e5e5;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li > a > img,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li > a > img,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li > a > img,
 body.page aside.sidebar .widget_nav_menu ul > li > a > img,
 body aside.sidebar .widget_recent_entries ul > li > a > img,
 body.home.page .widget.widget_recent_entries ul > li > a > img {
   max-width: none;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li,
 body.page aside.sidebar .widget_nav_menu ul > li,
 body aside.sidebar .widget_recent_entries ul > li,
 body.home.page .widget.widget_recent_entries ul > li {
   float: left;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li > a,
 body.page aside.sidebar .widget_nav_menu ul > li > a,
 body aside.sidebar .widget_recent_entries ul > li > a,
 body.home.page .widget.widget_recent_entries ul > li > a {
   border-radius: 4px;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li + li,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li + li,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li + li,
 body.page aside.sidebar .widget_nav_menu ul > li + li,
 body aside.sidebar .widget_recent_entries ul > li + li,
 body.home.page .widget.widget_recent_entries ul > li + li {
   margin-left: 2px;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.active > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.active > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.active > a,
 body.page aside.sidebar .widget_nav_menu ul > li.active > a,
 body aside.sidebar .widget_recent_entries ul > li.active > a,
 body.home.page .widget.widget_recent_entries ul > li.active > a,
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.active > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.active > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.active > a:hover,
 body.page aside.sidebar .widget_nav_menu ul > li.active > a:hover,
 body aside.sidebar .widget_recent_entries ul > li.active > a:hover,
 body.home.page .widget.widget_recent_entries ul > li.active > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul > li.active > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li.active > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li.active > a:focus,
 body.page aside.sidebar .widget_nav_menu ul > li.active > a:focus,
 body aside.sidebar .widget_recent_entries ul > li.active > a:focus,
 body.home.page .widget.widget_recent_entries ul > li.active > a:focus {
@@ -9602,12 +9646,16 @@ body.home.page .widget.widget_recent_entries ul > li.active > a:focus {
   background-color: #004e99;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li,
 body.page aside.sidebar .widget_nav_menu ul > li,
 body aside.sidebar .widget_recent_entries ul > li,
 body.home.page .widget.widget_recent_entries ul > li {
   float: none;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li + li,
+body.single.single-release aside.sidebar .widget_nav_menu ul > li + li,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul > li + li,
 body.page aside.sidebar .widget_nav_menu ul > li + li,
 body aside.sidebar .widget_recent_entries ul > li + li,
 body.home.page .widget.widget_recent_entries ul > li + li {
@@ -9615,10 +9663,14 @@ body.home.page .widget.widget_recent_entries ul > li + li {
   margin-left: 0;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > a,
 body.page aside.sidebar .widget_nav_menu ul li > a,
 body aside.sidebar .widget_recent_entries ul li > a,
 body.home.page .widget.widget_recent_entries ul li > a,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active-parent > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active-parent > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active-parent > a,
 body.page aside.sidebar .widget_nav_menu ul li.active-parent > a,
 body aside.sidebar .widget_recent_entries ul li.active-parent > a,
 body.home.page .widget.widget_recent_entries ul li.active-parent > a {
@@ -9628,10 +9680,14 @@ body.home.page .widget.widget_recent_entries ul li.active-parent > a {
   font-size: 1.2em;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li > a:hover,
 body aside.sidebar .widget_recent_entries ul li > a:hover,
 body.home.page .widget.widget_recent_entries ul li > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active > a:focus,
 body.page aside.sidebar .widget_nav_menu ul li.active > a:focus,
 body aside.sidebar .widget_recent_entries ul li.active > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active > a:focus {
@@ -9640,6 +9696,8 @@ body.home.page .widget.widget_recent_entries ul li.active > a:focus {
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
 body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
 body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a,
 body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a {
@@ -9648,10 +9706,14 @@ body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > 
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li.active > a:hover,
 body aside.sidebar .widget_recent_entries ul li.active > a:hover,
 body.home.page .widget.widget_recent_entries ul li.active > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active > a:focus,
 body.page aside.sidebar .widget_nav_menu ul li.active > a:focus,
 body aside.sidebar .widget_recent_entries ul li.active > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active > a:focus {
@@ -9660,10 +9722,14 @@ body.home.page .widget.widget_recent_entries ul li.active > a:focus {
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > ul > li > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > ul > li > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > ul > li > a,
 body.page aside.sidebar .widget_nav_menu ul li > ul > li > a,
 body aside.sidebar .widget_recent_entries ul li > ul > li > a,
 body.home.page .widget.widget_recent_entries ul li > ul > li > a,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
 body.page aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
 body aside.sidebar .widget_recent_entries ul li.active-parent > ul > li > a,
 body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a {
@@ -9676,14 +9742,20 @@ body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a {
   padding-bottom: 5px;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li > ul > li > a:hover,
 body aside.sidebar .widget_recent_entries ul li > ul > li > a:hover,
 body.home.page .widget.widget_recent_entries ul li > ul > li > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a:hover,
 body aside.sidebar .widget_recent_entries ul li.active-parent > ul > li > a:hover,
 body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
 body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
 body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a:focus {
@@ -9692,6 +9764,8 @@ body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > 
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
 body.page aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
 body aside.sidebar .widget_recent_entries ul li > ul > li.active:not(.active-parent) > a,
 body.home.page .widget.widget_recent_entries ul li > ul > li.active:not(.active-parent) > a {
@@ -9700,10 +9774,14 @@ body.home.page .widget.widget_recent_entries ul li > ul > li.active:not(.active-
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a:hover,
+body.single.single-release aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a:hover,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a:hover,
 body.page aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a:hover,
 body aside.sidebar .widget_recent_entries ul li > ul > li.active:not(.active-parent) > a:hover,
 body.home.page .widget.widget_recent_entries ul li > ul > li.active:not(.active-parent) > a:hover,
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body.single.single-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
+body.archive.post-type-archive-release aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
 body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:focus,
 body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a:focus {
