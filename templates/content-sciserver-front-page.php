@@ -24,7 +24,7 @@ endif;
 <div class="container">
 <div class="row">
 <div class="col-sm-9">
-<h2><a href="/support/updates/">SciServer <em><?php echo $scis_options[0]['release-name']; ?></em> <?php echo $scis_options[0]['system-version']; ?></a></h2>
+<h2><a href="/release/">SciServer <em><?php echo $scis_options[0]['release-name']; ?></em> <?php echo $scis_options[0]['system-version']; ?></a></h2>
 <?php while (have_posts()) : the_post(); ?>
   <?php the_content(); ?>
 <?php endwhile; ?>
