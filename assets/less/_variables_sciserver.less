@@ -536,9 +536,6 @@ body.page.page-template-core-archive .well {
    intro
    ++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++
-   sidebar
-   ++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ================================================
    Extras
    ================================================ */
@@ -547,6 +544,21 @@ body.page.page-template-core-archive .well {
 	font-size:				1.3333em;
 	content: 				' \f14c';
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++
+   Show Expand/Collapse Icons
+   ++++++++++++++++++++++++++++++++++++++++++++++++ */
+.collapse-toggle:before {
+	font-family: 'Glyphicons Halflings';
+	content: "\e082";
+	//content: "-";
+	float: left;
+	padding-right: 15px;
+}
+.collapse-toggle.collapsed:before{
+		content: "\e081";
+		//content: "+";
+}
+
 /* ================================================
    WordPress Overrides
    ================================================ */
