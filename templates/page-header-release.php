@@ -1,3 +1,3 @@
 <div class="page-header">
-  <h1>Releases & Updates</h1>
+  <h1>Release Notes</h1>
 </div>
