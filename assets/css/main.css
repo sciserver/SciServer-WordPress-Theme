@@ -905,12 +905,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #004e99;
+  color: #000000;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #00274d;
+  color: #000000;
   text-decoration: none;
 }
 a:focus {
@@ -1147,10 +1147,10 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #004e99;
+  color: #000000;
 }
 a.text-primary:hover {
-  color: #003466;
+  color: #000000;
 }
 .text-success {
   color: #3c763d;
@@ -1178,10 +1178,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #004e99;
+  background-color: #000000;
 }
 a.bg-primary:hover {
-  background-color: #003466;
+  background-color: #000000;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -2970,8 +2970,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary,
 .comment-form input[type="submit"] {
   color: #ffffff;
-  background-color: #004e99;
-  border-color: #004180;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2986,8 +2986,8 @@ fieldset[disabled] .btn-default.active {
 .comment-form input[type="submit"].active,
 .open > .dropdown-toggle.comment-form input[type="submit"] {
   color: #ffffff;
-  background-color: #003466;
-  border-color: #002242;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3033,18 +3033,18 @@ fieldset[disabled] .comment-form input[type="submit"]:active,
 .comment-form input[type="submit"].disabled.active,
 .comment-form input[type="submit"][disabled].active,
 fieldset[disabled] .comment-form input[type="submit"].active {
-  background-color: #004e99;
-  border-color: #004180;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary .badge,
 .comment-form input[type="submit"] .badge {
-  color: #004e99;
+  color: #000000;
   background-color: #ffffff;
 }
 .btn-success {
   color: #ffffff;
-  background-color: #009998;
-  border-color: #00807e;
+  background-color: #0f899a;
+  border-color: #0d7483;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3053,8 +3053,8 @@ fieldset[disabled] .comment-form input[type="submit"].active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #006665;
-  border-color: #004242;
+  background-color: #0a606c;
+  border-color: #07434b;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3079,17 +3079,17 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #009998;
-  border-color: #00807e;
+  background-color: #0f899a;
+  border-color: #0d7483;
 }
 .btn-success .badge {
-  color: #009998;
+  color: #0f899a;
   background-color: #ffffff;
 }
 .btn-info {
   color: #ffffff;
-  background-color: #000199;
-  border-color: #000180;
+  background-color: #4720ad;
+  border-color: #3e1c97;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -3098,8 +3098,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #000166;
-  border-color: #000142;
+  background-color: #351882;
+  border-color: #291264;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3124,17 +3124,17 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #000199;
-  border-color: #000180;
+  background-color: #4720ad;
+  border-color: #3e1c97;
 }
 .btn-info .badge {
-  color: #000199;
+  color: #4720ad;
   background-color: #ffffff;
 }
 .btn-warning {
   color: #ffffff;
-  background-color: #990001;
-  border-color: #800001;
+  background-color: #fcb315;
+  border-color: #f4a803;
 }
 .btn-warning:hover,
 .btn-warning:focus,
@@ -3143,8 +3143,8 @@ fieldset[disabled] .btn-info.active {
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #ffffff;
-  background-color: #660001;
-  border-color: #420001;
+  background-color: #db9703;
+  border-color: #b87f02;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -3169,17 +3169,17 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #990001;
-  border-color: #800001;
+  background-color: #fcb315;
+  border-color: #f4a803;
 }
 .btn-warning .badge {
-  color: #990001;
+  color: #fcb315;
   background-color: #ffffff;
 }
 .btn-danger {
   color: #ffffff;
-  background-color: #999800;
-  border-color: #807e00;
+  background-color: #fc5015;
+  border-color: #f44103;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -3188,8 +3188,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #666500;
-  border-color: #424200;
+  background-color: #db3a03;
+  border-color: #b83102;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3214,15 +3214,15 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #999800;
-  border-color: #807e00;
+  background-color: #fc5015;
+  border-color: #f44103;
 }
 .btn-danger .badge {
-  color: #999800;
+  color: #fc5015;
   background-color: #ffffff;
 }
 .btn-link {
-  color: #004e99;
+  color: #000000;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3243,7 +3243,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #00274d;
+  color: #000000;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3396,7 +3396,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #004e99;
+  background-color: #000000;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3938,7 +3938,7 @@ select[multiple].input-group-sm > .input-group-btn > .comment-form input[type="s
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #004e99;
+  border-color: #000000;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4031,7 +4031,7 @@ select[multiple].input-group-sm > .input-group-btn > .comment-form input[type="s
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #004e99;
+  background-color: #000000;
 }
 .nav-stacked > li {
   float: none;
@@ -4677,7 +4677,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #004e99;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4697,7 +4697,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #00274d;
+  color: #000000;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4709,8 +4709,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #004e99;
-  border-color: #004e99;
+  background-color: #000000;
+  border-color: #000000;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -4826,39 +4826,39 @@ a.label:focus {
   background-color: #5e5e5e;
 }
 .label-primary {
-  background-color: #004e99;
+  background-color: #000000;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #003466;
+  background-color: #000000;
 }
 .label-success {
-  background-color: #009998;
+  background-color: #0f899a;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #006665;
+  background-color: #0a606c;
 }
 .label-info {
-  background-color: #000199;
+  background-color: #4720ad;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #000166;
+  background-color: #351882;
 }
 .label-warning {
-  background-color: #990001;
+  background-color: #fcb315;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #660001;
+  background-color: #db9703;
 }
 .label-danger {
-  background-color: #999800;
+  background-color: #fc5015;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #666500;
+  background-color: #db3a03;
 }
 .badge {
   display: inline-block;
@@ -4894,7 +4894,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #004e99;
+  color: #000000;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -4971,7 +4971,7 @@ a.thumbnail.active,
 a.wp-caption:hover,
 a.wp-caption:focus,
 a.wp-caption.active {
-  border-color: #004e99;
+  border-color: #000000;
 }
 .thumbnail .caption,
 .wp-caption .caption,
@@ -5095,7 +5095,7 @@ a.wp-caption.active {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
-  background-color: #004e99;
+  background-color: #000000;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -5117,7 +5117,7 @@ a.wp-caption.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #009998;
+  background-color: #0f899a;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5125,7 +5125,7 @@ a.wp-caption.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #000199;
+  background-color: #4720ad;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5133,7 +5133,7 @@ a.wp-caption.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-warning {
-  background-color: #990001;
+  background-color: #fcb315;
 }
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5141,7 +5141,7 @@ a.wp-caption.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-danger {
-  background-color: #999800;
+  background-color: #fc5015;
 }
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5237,8 +5237,8 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #004e99;
-  border-color: #004e99;
+  background-color: #000000;
+  border-color: #000000;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
@@ -5254,7 +5254,7 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #66b4ff;
+  color: #666666;
 }
 .list-group-item-success {
   color: #3c763d;
@@ -5598,22 +5598,22 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #dddddd;
 }
 .panel-primary {
-  border-color: #004e99;
+  border-color: #000000;
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #004e99;
-  border-color: #004e99;
+  background-color: #000000;
+  border-color: #000000;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #004e99;
+  border-top-color: #000000;
 }
 .panel-primary > .panel-heading .badge {
-  color: #004e99;
+  color: #000000;
   background-color: #ffffff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #004e99;
+  border-bottom-color: #000000;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -8716,6 +8716,12 @@ body.home.page .widget.widget_recent_entries ul:after,
 .fa-medium:before {
   content: "\f23a";
 }
+/*!
+ *-------------------------------------------------*
+ * MEDEDSC Brand Theme Customization
+ * Custom Variables
+ *-------------------------------------------------*
+ */
 /* ================================================
    Colors
    ================================================ */
@@ -8739,34 +8745,34 @@ body.home.page .widget.widget_recent_entries ul:after,
    Typography
    ================================================ */
 .text-primary {
-  color: #004e99;
+  color: #000000;
 }
 a.text-primary:hover {
-  color: #003466;
+  color: #000000;
 }
 .text-success {
-  color: #009998;
+  color: #0f899a;
 }
 a.text-success:hover {
-  color: #006665;
+  color: #0a606c;
 }
 .text-info {
-  color: #000199;
+  color: #4720ad;
 }
 a.text-info:hover {
-  color: #000166;
+  color: #351882;
 }
 .text-warning {
-  color: #990001;
+  color: #fcb315;
 }
 a.text-warning:hover {
-  color: #660001;
+  color: #db9703;
 }
 .text-danger {
-  color: #999800;
+  color: #fc5015;
 }
 a.text-danger:hover {
-  color: #666500;
+  color: #db3a03;
 }
 span.x-small,
 p.x-small {
@@ -8793,19 +8799,30 @@ p.sans {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 /* ================================================
+   Pre-Header
+   ================================================ */
+.pre-header {
+  color: #ffffff;
+  background-color: #fcb315;
+}
+/* ================================================
    Header
    ================================================ */
+header.banner.navbar.navbar-default.navbar-static-top {
+  border-width: 0;
+}
 header div.logo {
-  background-color: #ffbb7a;
-  padding: 15px 0 10px 0;
+  padding: 0;
+  background-color: #003466;
+  color: #e8e8e8;
 }
 header div.logo img.header-logo {
-  max-height: 86px;
+  max-height: 60px;
   margin: 0 auto auto 0;
 }
 header div.logo img.header-logo.header-logo-right {
-  max-height: 64.5px;
-  margin: 21.5px 0 0 auto !important;
+  max-height: 45px;
+  margin: 15px 0 0 auto !important;
 }
 header div.logo .blogname {
   font-family: "QuarkBold", Helvetica, Arial, sans-serif;
@@ -8830,6 +8847,39 @@ header div.logo .tagline {
   font-size: 24px;
   font-weight: 200;
   text-align: right;
+}
+header div.tagline {
+  padding-top: 30px;
+}
+header .navbar,
+header.navbar {
+  margin: 0;
+}
+header .navbar .navbar-header,
+header.navbar .navbar-header {
+  float: right;
+}
+header.navbar-default {
+  font-size: 16px;
+  color: #222222;
+}
+header.navbar-default ul.navbar-nav > li > a {
+  color: #333333;
+  font-weight: 400;
+}
+header.navbar-default ul.navbar-nav > li > a:hover,
+header.navbar-default ul.navbar-nav > li > a:focus {
+  color: #222222;
+  font-weight: 500;
+}
+header.navbar-default ul.navbar-nav > li.active > a,
+header.navbar-default ul.navbar-nav > li.open > a,
+header.navbar-default ul.navbar-nav > li.active > a:hover,
+header.navbar-default ul.navbar-nav > li.open > a:hover,
+header.navbar-default ul.navbar-nav > li.active > a:focus,
+header.navbar-default ul.navbar-nav > li.open > a:focus {
+  color: #222222;
+  font-weight: 500;
 }
 /* ================================================
    Footer
@@ -8880,7 +8930,7 @@ body.home section.splash-widgets section.sidebar-splash {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 9px;
   border-radius: 3px;
-  border-left: 5px solid #003466;
+  border-left: 5px solid #000000;
 }
 body.home section.splash-widgets section.sidebar-splash blockquote {
   border-color: #ddd;
@@ -8913,8 +8963,10 @@ body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more
   -ms-user-select: none;
   user-select: none;
   color: #ffffff;
-  background-color: #004e99;
-  border-color: #004180;
+  background-color: #000000;
+  border-color: #000000;
+  background-color: #333333;
+  border-color: #222222;
   margin-top: 9px;
   display: table;
 }
@@ -8958,8 +9010,8 @@ body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link.active,
 .open > .dropdown-togglebody.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link {
   color: #ffffff;
-  background-color: #003466;
-  border-color: #002242;
+  background-color: #000000;
+  border-color: #000000;
 }
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link:active,
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link.active,
@@ -8984,12 +9036,18 @@ fieldset[disabled] body.home section.splash-widgets section.sidebar-splash div.e
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link.disabled.active,
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link[disabled].active,
 fieldset[disabled] body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link.active {
-  background-color: #004e99;
-  border-color: #004180;
+  background-color: #000000;
+  border-color: #000000;
 }
 body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link .badge {
-  color: #004e99;
+  color: #000000;
   background-color: #ffffff;
+}
+body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link:active,
+body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link:focus,
+body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more-link:hover {
+  background-color: #222222;
+  border-color: #111111;
 }
 body.home section.splash-widgets section.sidebar-splash div.custom-field {
   font-size: 16px;
@@ -9011,7 +9069,7 @@ body.home section.splash-widgets hr {
   border-top: 1px solid #eee;
 }
 body.home section.splash-explore {
-  background-color: #003466;
+  background-color: #000000;
 }
 body.home section.splash-explore h3 {
   color: #fff;
@@ -9051,18 +9109,15 @@ body.home section.splash-explore h3 {
    ================================================ */
 /*!
  *-------------------------------------------------*
- * SciServer Brand Theme Customization
+ * MEDEDSC Brand Theme Customization
  * Custom Variables
  *-------------------------------------------------*
  */
 /* ================================================
-   Colors
-   ================================================ */
-/* ================================================
    Fonts
    ================================================ */
 body.page h3 span.glyphicon {
-  color: #004e99;
+  color: #000000;
 }
 /* ================================================
    Labels
@@ -9083,104 +9138,15 @@ body.page div.label.label-info a,
 body.page div.label.label-success a {
   color: #00274d;
 }
-span.new {
-  top: -0.5em;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  background-color: #999800;
-  vertical-align: super;
-}
-aspan.new:hover,
-aspan.new:focus {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-span.new:empty {
-  display: none;
-}
-.btn span.new,
-.comment-form input[type="submit"] span.new {
-  position: relative;
-  top: -1px;
-}
-span.new[href]:hover,
-span.new[href]:focus {
-  background-color: #666500;
-}
-span.new:after {
-  content: "NEW!";
-}
-/* ================================================
-   Typography
-   ================================================ */
-/* ================================================
-   Header
-   ================================================ */
-header.banner.navbar.navbar-default.navbar-static-top {
-  border-width: 0;
-}
-header div.logo {
-  padding: 10px 0 14px 0;
-  background-color: #003466;
-  color: #e8e8e8;
-}
-header div.tagline {
-  padding-top: 30px;
-}
-header .navbar,
-header.navbar {
-  margin: 0;
-}
-header .navbar .navbar-header,
-header.navbar .navbar-header {
-  float: right;
-}
-header.navbar-default {
-  background-color: #e8e8e8;
-  border-color: #b4b4b4;
-  font-size: 16px;
-  color: #222222;
-}
-header.navbar-default ul.navbar-nav > li > a {
-  color: #333333;
-  font-weight: 400;
-}
-header.navbar-default ul.navbar-nav > li > a:hover,
-header.navbar-default ul.navbar-nav > li > a:focus {
-  color: #222222;
-  font-weight: 500;
-}
-header.navbar-default ul.navbar-nav > li.active > a,
-header.navbar-default ul.navbar-nav > li.open > a,
-header.navbar-default ul.navbar-nav > li.active > a:hover,
-header.navbar-default ul.navbar-nav > li.open > a:hover,
-header.navbar-default ul.navbar-nav > li.active > a:focus,
-header.navbar-default ul.navbar-nav > li.open > a:focus {
-  color: #222222;
-  font-weight: 500;
-}
 /* ================================================
    Footer
    ================================================ */
 footer.pagefooter {
   color: #ffffff;
-  background-color: #003466;
-  padding: 11px 0 16px 0 ;
-  -webkit-box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
-  box-shadow: 0 -4px 0 rgba(180, 180, 184, 0.85);
-  margin-top: 20px;
+  background-color: #000000;
+  padding: 20px 0 ;
+  margin: 0;
+  min-height: 400px;
 }
 footer.pagefooter p {
   text-align: center;
@@ -9252,7 +9218,7 @@ footer.pagefooter ul .open > a,
 footer.pagefooter ul .open > a:hover,
 footer.pagefooter ul .open > a:focus {
   background-color: #eeeeee;
-  border-color: #004e99;
+  border-color: #000000;
 }
 footer.pagefooter ul .nav-divider {
   height: 1px;
@@ -9276,7 +9242,7 @@ footer.pagefooter ul > li.active > a,
 footer.pagefooter ul > li.active > a:hover,
 footer.pagefooter ul > li.active > a:focus {
   color: #ffffff;
-  background-color: #004e99;
+  background-color: #000000;
 }
 footer.pagefooter ul > li {
   float: none;
@@ -9301,7 +9267,7 @@ footer.pagefooter ul li a:focus {
    FrontPage
    ================================================ */
 body.home section.splash .splash-screen {
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   width: 100%;
   margin-top: 0;
@@ -9348,10 +9314,10 @@ body.home section.splash .intro-message .splash-subtitle {
   font-size: 18px;
 }
 body.home .splash-banner {
-  background-color: #003466;
+  background-color: black;
   color: white;
   text-align: center;
-  padding: 20px 20px 10px 20px;
+  padding: 10px;
   margin: 0;
 }
 body.home .splash-banner * a {
@@ -9385,6 +9351,24 @@ body.home .splash-banner p {
   max-width: 50%;
   vertical-align: text-top;
 }
+body.home section.splash-content {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+body.home section.splash-content a {
+  color: #dddddd;
+}
+body.home section.splash-content a:hover,
+body.home section.splash-content a :active,
+body.home section.splash-content a :focus {
+  color: #bbbbbb;
+}
+body.home section.splash-content .content-box {
+  border-top: 1px #333333 solid;
+  border-bottom: 1px #333333 solid;
+  padding: 20px 0 ;
+}
 body.home section.splash-teaser {
   /*
 */
@@ -9411,7 +9395,7 @@ body.home section.splash-teaser div.panel-splash-teaser .panel-heading {
   text-align: center;
   font-size: -webkit-xxx-large;
   font-size: 48px;
-  color: #004e99;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser .panel-body {
   color: #333333;
@@ -9420,40 +9404,40 @@ body.home section.splash-teaser div.panel-splash-teaser .panel-body .entry-title
   text-align: -webkit-center;
 }
 body.home section.splash-teaser div.panel-splash-teaser-1 .panel-heading > a {
-  color: #009998;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-1 .panel-heading > a:hover {
-  color: #006665;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-2 .panel-heading > a {
-  color: #004e99;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-2 .panel-heading > a:hover {
-  color: #003466;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a {
-  color: #000199;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a:hover {
-  color: #000166;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-4 .panel-heading > a {
-  color: #999800;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-4 .panel-heading > a:hover {
-  color: #666500;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-5 .panel-heading > a {
-  color: #994b00;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-5 .panel-heading > a:hover {
-  color: #663200;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-6 .panel-heading > a {
-  color: #990001;
+  color: #000000;
 }
 body.home section.splash-teaser div.panel-splash-teaser-6 .panel-heading > a:hover {
-  color: #660001;
+  color: #000000;
 }
 /* ================================================
    Body
@@ -9579,7 +9563,7 @@ body.page aside.sidebar .widget_nav_menu ul .open > a:focus,
 body aside.sidebar .widget_recent_entries ul .open > a:focus,
 body.home.page .widget.widget_recent_entries ul .open > a:focus {
   background-color: #eeeeee;
-  border-color: #004e99;
+  border-color: #000000;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul .nav-divider,
 body.single.single-release aside.sidebar .widget_nav_menu ul .nav-divider,
@@ -9643,7 +9627,7 @@ body.page aside.sidebar .widget_nav_menu ul > li.active > a:focus,
 body aside.sidebar .widget_recent_entries ul > li.active > a:focus,
 body.home.page .widget.widget_recent_entries ul > li.active > a:focus {
   color: #ffffff;
-  background-color: #004e99;
+  background-color: #000000;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul > li,
 body.single.single-release aside.sidebar .widget_nav_menu ul > li,
@@ -9675,7 +9659,7 @@ body.page aside.sidebar .widget_nav_menu ul li.active-parent > a,
 body aside.sidebar .widget_recent_entries ul li.active-parent > a,
 body.home.page .widget.widget_recent_entries ul li.active-parent > a {
   background-color: transparent;
-  color: #003466;
+  color: #000000;
   font-weight: 500;
   font-size: 1.2em;
 }
@@ -9692,7 +9676,7 @@ body.page aside.sidebar .widget_nav_menu ul li.active > a:focus,
 body aside.sidebar .widget_recent_entries ul li.active > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #000d19;
+  color: #000000;
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
@@ -9702,7 +9686,7 @@ body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a,
 body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a,
 body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a {
   background-color: transparent;
-  color: #000d19;
+  color: #000000;
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li.active > a:hover,
@@ -9734,7 +9718,7 @@ body.page aside.sidebar .widget_nav_menu ul li.active-parent > ul > li > a,
 body aside.sidebar .widget_recent_entries ul li.active-parent > ul > li > a,
 body.home.page .widget.widget_recent_entries ul li.active-parent > ul > li > a {
   background-color: transparent;
-  color: #000d19;
+  color: #000000;
   font-weight: 500;
   font-size: 1.1em;
   padding-left: 40px;
@@ -9760,7 +9744,7 @@ body.page aside.sidebar .widget_nav_menu ul li.active:not(.active-parent) > a:fo
 body aside.sidebar .widget_recent_entries ul li.active:not(.active-parent) > a:focus,
 body.home.page .widget.widget_recent_entries ul li.active:not(.active-parent) > a:focus {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #000d19;
+  color: #000000;
   font-weight: 600;
 }
 body.single.single-post aside.sidebar .widget_nav_menu ul li > ul > li.active:not(.active-parent) > a,
@@ -9813,6 +9797,30 @@ body.page ul.nav-pills.nav-stacked > li > ul.nav.nav-pills.nav-stacked > li > ul
 /* ================================================
    Buttons
    ================================================ */
+.btn-primary,
+.comment-form input[type="submit"] {
+  background-color: #333333;
+  border-color: #222222;
+}
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.comment-form input[type="submit"]:active,
+.comment-form input[type="submit"]:focus,
+.comment-form input[type="submit"]:hover {
+  background-color: #222222;
+  border-color: #111111;
+}
+.btn-complement {
+  background-color: #2043AA;
+  border-color: #102F8A;
+}
+.btn-complement:active,
+.btn-complement:focus,
+.btn-complement:hover {
+  background-color: #102F8A;
+  border-color: #0A236D;
+}
 /* ================================================
    Carouslide
    ================================================ */
@@ -9903,7 +9911,7 @@ section.carouslides #collapslides > div.panel.panel-default {
    Collapsible Accordions
    ================================================ */
 #accordion a {
-  color: #003466;
+  color: #000000;
 }
 #accordion h3 {
   font-size: 1.5em;
@@ -9953,23 +9961,28 @@ a.external-link:after {
 /* ================================================
    Media
    ================================================ */
-@media (max-width: 767px) {
-  body.home section.splash .intro-message .splash-title {
-    font-size: 60px;
-  }
-  header div.tagline {
-    padding-top: 10px;
-  }
-}
 @media (max-width: 991px) {
   body.page img.wp-post-image.alignright {
     float: right;
     margin-left: 10px;
   }
-}
-@media (max-width: 1199px) {
   body.home section.splash .splash-screen {
     height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  body.home section.splash .intro-message .splash-title {
+    font-size: 60px;
+  }
+  body.home section.splash .splash-screen {
+    height: 350px;
+  }
+  body.home section.splash-banner .btn,
+  body.home section.splash-banner .comment-form input[type="submit"] {
+    margin: 5px;
+  }
+  header div.tagline {
+    padding-top: 10px;
   }
 }
 .comment-list ol {

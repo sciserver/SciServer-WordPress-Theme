@@ -26,13 +26,13 @@ if ( defined( 'WP_ENV' ) &&
 ?>
 	<div class="wrap container-fluid" role="document">
 		<div class="content row">
-			<div class="col-xs-12" style="background-color: yellow;">
+			<div class="col-xs-12 pre-header">
 				<p class="pull-right align-right">&nbsp;<br><?php
 				if (! is_user_logged_in()) {
 					echo( '<span><a href="/wp-login.php" class="btn btn-primary">Login to WordPress</a></span>' );
 				}?></p>
 			</div>
-			<div class="clearfix"><div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 <?php
