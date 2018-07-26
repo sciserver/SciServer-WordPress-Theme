@@ -27,6 +27,7 @@ $roots_includes = array(
   'lib/extras.php',          // Custom functions
   'lib/sciserver-shortcodes.php',   	// Custom shortcodes
   'lib/sciserver-messages.php',   		// Messages to appear on SciServer components
+  'lib/sciserver-guides.php',   		// User Guides
   'lib/widget-recent-releases.php',		// Widget to Show Recent Release CPT 
 );
 
