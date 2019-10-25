@@ -2959,7 +2959,6 @@ select[multiple].form-group-lg .comment-form textarea {
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
@@ -8838,19 +8837,19 @@ body.home.page .widget.widget_recent_entries ul:after,
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 300;
-  src: url(http://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: url(http://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: url(http://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cabin';
@@ -9087,7 +9086,6 @@ body.home section.splash-widgets section.sidebar-splash div.entry-summary a.more
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   color: #fff;
@@ -9610,10 +9608,10 @@ body.home section.splash-teaser div.panel-splash-teaser-2 .panel-heading > a:hov
   color: #003466;
 }
 body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a {
-  color: #000199;
+  color: #710099;
 }
 body.home section.splash-teaser div.panel-splash-teaser-3 .panel-heading > a:hover {
-  color: #000166;
+  color: #4b0066;
 }
 body.home section.splash-teaser div.panel-splash-teaser-4 .panel-heading > a {
   color: #999800;
