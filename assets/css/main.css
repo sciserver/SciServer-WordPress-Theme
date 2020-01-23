@@ -8977,12 +8977,12 @@ header div.logo {
   padding: 15px 0 10px 0;
 }
 header div.logo img.header-logo {
-  max-height: 86px;
+  max-height: 100px;
   margin: 0 auto auto 0;
 }
 header div.logo img.header-logo.header-logo-right {
-  max-height: 64.5px;
-  margin: 21.5px 0 0 auto !important;
+  max-height: 75px;
+  margin: 25px 0 0 auto !important;
 }
 header div.logo .blogname {
   font-family: "QuarkBold", Helvetica, Arial, sans-serif;
@@ -9314,6 +9314,7 @@ header div.logo {
 }
 header div.tagline {
   padding-top: 30px;
+  font-size: 24px;
 }
 header .navbar,
 header.navbar {
@@ -9494,7 +9495,7 @@ body.home section.splash .intro-message .splash-title,
 body.home section.splash .intro-message .splash-subtitle {
   font-family: "QuarkBold", Helvetica, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  padding: 12px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
   color: #fff;
   margin: 0;
@@ -9515,13 +9516,13 @@ body.home section.splash .intro-message .splash-title {
   margin-bottom: 11px;
   color: #fff;
   margin: 0 0 10px 0;
-  font-size: 80px;
+  font-size: 3em;
   font-weight: 700;
   letter-spacing: 1px;
 }
 body.home section.splash .intro-message .splash-subtitle {
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 1.3em;
 }
 body.home .splash-banner {
   background-color: #003466;
