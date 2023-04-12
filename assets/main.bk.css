@@ -8810,6 +8810,96 @@ body.home.page .widget.widget_recent_entries ul:after,
    Font Paths and Imports
    ================================================ */
 @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(http://fonts.gstatic.com/s/sourcesanspro/v13/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUhiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cabin Italic'), local('Cabin-Italic'), url(http://fonts.gstatic.com/s/cabin/v14/u-4_0qWljRw-Pd81z_9Cmw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Cabin Medium Italic'), local('Cabin-MediumItalic'), url(http://fonts.gstatic.com/s/cabin/v14/u-460qWljRw-Pd81xwxhiytOew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Cabin SemiBold Italic'), local('Cabin-SemiBoldItalic'), url(http://fonts.gstatic.com/s/cabin/v14/u-460qWljRw-Pd81xyBmiytOew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cabin Bold Italic'), local('Cabin-BoldItalic'), url(http://fonts.gstatic.com/s/cabin/v14/u-460qWljRw-Pd81x0RniytOew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin'), local('Cabin-Regular'), url(http://fonts.gstatic.com/s/cabin/v14/u-4x0qWljRw-Pd8w__g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Cabin Medium'), local('Cabin-Medium'), url(http://fonts.gstatic.com/s/cabin/v14/u-480qWljRw-PdfD3Ohluyw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Cabin SemiBold'), local('Cabin-SemiBold'), url(http://fonts.gstatic.com/s/cabin/v14/u-480qWljRw-Pdfv2-hluyw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(http://fonts.gstatic.com/s/cabin/v14/u-480qWljRw-PdeL2uhluyw.ttf) format('truetype');
+}
+@font-face {
   font-family: 'QuarkBold';
   src: url('../fonts/quark-bold.eot');
   src: url('../fonts/quark-bold.eot') format('embedded-opentype'), url('../fonts/quark-bold.woff') format('woff'), url('../fonts/quark-bold.ttf') format('truetype'), url('../fonts/quark-bold.svg#QuarkBold') format('svg');
