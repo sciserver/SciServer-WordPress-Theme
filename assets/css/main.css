@@ -10064,6 +10064,9 @@ a.external-link:after {
     height: 300px;
   }
 }
+.remindme {
+  background-color: yellow;
+}
 .comment-list ol {
   list-style: none;
 }

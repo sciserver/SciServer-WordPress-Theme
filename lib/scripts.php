@@ -19,7 +19,8 @@ function roots_scripts() {
    * The build task in Grunt renames production assets with a hash
    * Read the asset names from assets-manifest.json
    */
-  if (WP_ENV === 'development') {
+// if (WP_ENV === 'development') {
+  if ($_ENV['PANTHEON_ENVIRONMENT'] != 'live') {	
     $assets = array(
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',

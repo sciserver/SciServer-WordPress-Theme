@@ -27,7 +27,7 @@ if ( ($_ENV['PANTHEON_ENVIRONMENT'] == 'dev') || ($_ENV['PANTHEON_ENVIRONMENT'] 
 ?>
 	<div class="wrap container-fluid" role="document">
 		<div class="content row">
-			<div class="col-xs-12" style="background-color: yellow;">
+			<div class="col-xs-12 remindme">
             	<p class="pull-left align-left" style='font-size: xx-large;'>
                 	<span style='font-weight:bold;'><?php echo $_ENV['PANTHEON_ENVIRONMENT']; ?></span> site:
                     	<?php echo REMINDER; ?>
@@ -37,9 +37,10 @@ if ( ($_ENV['PANTHEON_ENVIRONMENT'] == 'dev') || ($_ENV['PANTHEON_ENVIRONMENT'] 
 					echo( '<span><a href="/wp-login.php" class="btn btn-primary">Login to WordPress</a></span>' );
 				}?></p>
 			</div>
-			<div class="clearfix"><div>
+			<div class="clearfix">
+            	<div>
+			</div>
 		</div>
-	</div>
 <?php
 endif;
 ?>
