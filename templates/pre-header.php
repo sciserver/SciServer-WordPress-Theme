@@ -21,12 +21,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <![endif]-->
 <?php 
-if ( defined( 'WP_ENV' ) && 
-	( strcmp( WP_ENV , 'development' ) === 0 ) ) : 
+/*if ( defined( 'WP_ENV' ) && 
+	( strcmp( WP_ENV , 'development' ) === 0 ) ) :  */
+if ( ($_ENV['PANTHEON_ENVIRONMENT'] == 'dev') || ($_ENV['PANTHEON_ENVIRONMENT'] == 'test') ): 
 ?>
 	<div class="wrap container-fluid" role="document">
 		<div class="content row">
 			<div class="col-xs-12" style="background-color: yellow;">
+            	<p class="pull-left align-left" style='font-size: xx-large;'>
+                	<span style='font-weight:bold;'><?php echo $_ENV['PANTHEON_ENVIRONMENT']; ?></span> site:
+                    	<?php echo REMINDER; ?>
+                </p>
 				<p class="pull-right align-right">&nbsp;<br><?php
 				if (! is_user_logged_in()) {
 					echo( '<span><a href="/wp-login.php" class="btn btn-primary">Login to WordPress</a></span>' );
